@@ -10,6 +10,12 @@ body {
     line-height: 1.5;
 }
 
+/* Format warning if JS is disabled - CSS is not currently working at the moment */
+noscript {
+    padding: 10px;
+    background: #00ff15;
+}
+
 h1 {
     font-size: 40px;
 }
@@ -48,11 +54,6 @@ img {
 .navbar a:hover {
     background-color: #bccbff;
     color: black;
-}
-
-.js-warn {
-    padding: 10px;
-    background: #00ff15;
 }
 
 

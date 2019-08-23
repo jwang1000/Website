@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: Verdana, Trebuchet, Helvetica, Arial, sans-serif;
+    font-size: 16px;
     text-align: left;
     line-height: 1.5;
 }
@@ -37,6 +38,7 @@ img {
     padding: 14px 20px;
     transition: 0.3s;
     text-decoration: none;
+    font-size: 16px;  /* Don't remove this, or else it's illegible on mobile! */
 }
 
 .navbar a.top {
@@ -48,6 +50,13 @@ img {
     color: black;
 }
 
+.js-warn {
+    padding: 10px;
+    background: #00ff15;
+}
+
+
+/* Controls the page header (with title of the page) */
 .intro {
     padding: 60px;
     text-align: left;
@@ -56,6 +65,7 @@ img {
     font-size: 18px;
 }
 
+/* Controls the skills section (with the buttons) */
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -98,6 +108,7 @@ progress { color: #5cff33; }
 /* The text underneath each icon */
 .caption {
     display: block;
+    font-size: 16px;  /* Don't remove this, or else it's illegible on mobile! */
 }
 
 /* The actual icon itself, which is a clickable button */
@@ -124,6 +135,10 @@ progress { color: #5cff33; }
     background: #d2ddff;
 }
 
+.details img {
+    padding: 15px;
+}
+
 /* Grouping of image and text inside details sections */
 .imgtext {
     display: flex;
@@ -145,6 +160,12 @@ progress { color: #5cff33; }
     overflow: hidden;
 }
 
+/* Set font size of names of each tab so they aren't vanishingly small 
+   Don't remove this, otherwise it's illegible on mobile! */
+.tablinks {
+    font-size: 16px;
+}
+
 .tab button {
     background-color: inherit;
     float: center;
@@ -153,7 +174,6 @@ progress { color: #5cff33; }
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 16px;
     font-family: Verdana, Trebuchet, Helvetica, Arial, sans-serif;
 }
 
@@ -195,11 +215,14 @@ progress { color: #5cff33; }
     .details {
         padding: 100px;
     }
+    .skills {
+        flex-direction: column;
+    }
 }
 
 
 @media screen and (max-width: 750px) {
-    .skills {
+    .about {
         flex-direction: column;
     }
     .details {

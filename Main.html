@@ -17,7 +17,6 @@
             text-align: center;
             background: #d2ddff;
             color: black;
-            font-size: 16px;
         }
 
         .aboutimg {
@@ -58,12 +57,6 @@
             background-color: #bccbff;
             color: black;
         }
-
-        @media screen and (max-width: 750px) {
-            .about {
-                flex-direction: column;
-            }
-        }
     </style>
 
     <nav class = "navbar">
@@ -73,6 +66,12 @@
         <a href = "About.html">About</a>
         <a href = "Main.html">Home</a>
     </nav>
+
+    <section class = "js-warn" id = "js-warn">
+        <h2><br>If you're seeing this, you have JavaScript disabled. <br>
+            Don't have JavaScript disabled. Browsing the internet sucks with JavaScript disabled.
+        </h2>
+    </section>
 
     <section class = "intro">
         <h1>Jonathan Wang</h1>
@@ -315,8 +314,8 @@
                     <progress value = 3 max = 4></progress>
                     <p>Intermediate</p>
                     <p>
-                        I created a fully-functioning clone of Minesweeper, including custom difficulty,
-                        custom board sizes, and high scores; I used the <b>Java Swing</b> library to
+                        In Java, I created a fully-functioning clone of Minesweeper, including custom
+                        difficulty and board sizes, and high scores; I used the <b>Java Swing</b> library to
                         implement the graphics and the scanner to implement file I/O.
                     </p>
                 </div>
@@ -356,7 +355,7 @@
                     <progress value = 1 max = 4></progress>
                     <p>Basic</p>
                     <p>
-                        I began to learn JavaScript as a hobby, and I used part of my knowledge in writing 
+                        I am learning JavaScript as a hobby, and I used part of my knowledge in writing 
                         scripts to build this website.
                     </p>
                 </div>
@@ -597,6 +596,10 @@
     </section>
 
     <script>
+        // if js is working, hide no-js banner
+        document.getElementById("js-warn").hidden = true;
+
+
         // open element with defaultOpen id on page load
         document.getElementById("defaultOpen").click();
 

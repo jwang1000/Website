@@ -11,12 +11,27 @@
 
 <body>
     <style>
-        .projects
-        {
+        /* Specific styling for displaying screenshot of project as well */
+        .details {
+            padding: 25px 100px 50px;
+        }
+
+        .imgtext {
             display: flex;
-            flex-wrap: wrap;
             text-align: center;
-            padding: 25px 60px;
+        }
+
+        .imgtext.left {
+            flex: 20%;
+        }
+        
+        .imgtext.center {
+            text-align: center;
+            flex: 60%;
+        }
+
+        .imgtext.right {
+            flex: 20%;
         }
     </style>
 
@@ -40,10 +55,73 @@
         <p>All current and past projects I've worked on</p>
     </section>
 
-    <section class = "projects">
-        <section class = "projIcons">
-            <p>Work in progress... Coming soon!</p>
-        </section>
+    <section class = "details" id = "projects">
+        <h2>Projects</h2>
+
+        <h3>GalakForce</h3>
+        <div class = "imgtext" id = "GalakForce">
+            <img class = "left" src = "Icons/terradatum.png">
+            <div class = "center">
+                <p> Language: C#<br>
+                    Technologies: Unity 3D</p>
+                <p> A 3<sup>rd</sup> person top down shooter, GalakForce is a work in progress in my spare
+                    time. Currently, enemies, combat, and UI have been implemented. Demo coming soon!</p>
+                <a href = "https://github.com/jwang1000/GalakForce">See GitHub repo...</a>
+            </div>
+            <img class = "right" src = "Icons/terradatum.png">
+        </div>
+
+        <h3>Minesweeper Clone</h3>
+        <div class = "imgtext" id = "Minesweeper Clone">
+            <img class = "left" src = "Icons/terradatum.png">
+            <div class = "center">
+                <p> Language: Java<br>
+                    Technologies: Java Swing library</p>
+                <p> A clone of the game Minesweeper with the original early Windows graphics. Complete with
+                    custom board sizes, pre-built difficulty settings, and persistent high scores.</p>
+                <a href = "https://github.com/jwang1000/Minesweeper">See GitHub repo...</a>
+            </div>
+            <img class = "right" src = "Icons/terradatum.png">
+        </div>
+
+        <h3>Star Fox 2D</h3>
+        <div class = "imgtext" id = "Star Fox 2D">
+            <img class = "left" src = "Icons/terradatum.png">
+            <div class = "center">
+                <p> Language: Python 2<br>
+                    Technologies: CodeSkulptor SimpleGUI library</p>
+                <p> A 2D version of the Star Fox space shooter game, including unique enemy and boss AI
+                    and multiple levels.</p>
+                <a href = "https://github.com/jwang1000/Star Fox 2D">See GitHub repo...</a>
+            </div>
+            <img class = "right" src = "Icons/terradatum.png">
+        </div>
+
+        <h3>Optimization Solver</h3>
+        <div class = "imgtext" id = "Optimization">
+            <img class = "left" src = "Icons/terradatum.png">
+            <div class = "center">
+                <p> Language: Python 3<br>
+                    Technologies: NumPy library<br>
+                    Partner: Terry Zheng</p>
+                <p> A calculator for various linear algebra and combinatorics & optimization problems. Includes
+                    functions such as validating solutions, graphing inequalities, and converting to various forms.</p>
+                <a href = "https://github.com/TerrayTM/optimization">See GitHub repo...</a>
+            </div>
+            <img class = "right" src = "Icons/terradatum.png">
+        </div>
+
+        <h3>jwang1000 Website</h3>
+        <div class = "imgtext" id = "Website">
+            <img class = "left" src = "Icons/terradatum.png">
+            <div class = "center">
+                <p> Languages: HTML, CSS, JavaScript</p>
+                <p> My personal website, built from scratch without the help of external libraries. Currently still
+                    a work in progress.</p>
+                <a href = "https://github.com/jwang1000/Website">See GitHub repo...</a>
+            </div>
+            <img class = "right" src = "Icons/terradatum.png">
+        </div>
     </section>
 
     <section class = "footer">

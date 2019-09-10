@@ -140,6 +140,22 @@ progress { color: #5cff33; }
     padding: 15px;
 }
 
+.details a {
+    float: center;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.details a:hover {
+    background-color: #bccbff;
+    color: black;
+}
+
+
 /* Grouping of image and text inside details sections */
 .imgtext {
     display: flex;
@@ -156,6 +172,7 @@ progress { color: #5cff33; }
 }
 
 
+/* Styling the skills tab (showing brief descriptions & icon of each skill on main page) */
 /* Styling the tabs for icons */
 .tab {
     overflow: hidden;
@@ -211,7 +228,7 @@ progress { color: #5cff33; }
     color: white;
 }
 
-
+/* Styling for smaller screens */
 @media screen and (max-width: 1000px) {
     .details {
         padding: 100px;
@@ -247,6 +264,65 @@ progress { color: #5cff33; }
     }
 }
 
+/* Styling for mobile by detecting pixel density - supported on "all" mobile browsers 
+Currently doesn't work!
+@media screen and (-webkit-device-pixel-ratio: 2) {
+    .about {
+        flex-direction: column;
+    }
+    .details {
+        padding: 60px;
+    }
+    .skills {
+        flex-direction: column;
+    }
+    .imgtext {
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+    }
+    .imgtext.right {
+        text-align: center;
+        padding: 0px;
+    }
+    .navbar a {
+        float: none;
+        width: 100%;
+        font-size: 24px;
+        color: #00ffff;
+    }
+}
+
+/* Styling for mobile by detecting pixel density 
+@media (min-resolution: 300dpi) {
+    .about {
+        flex-direction: column;
+    }
+    .details {
+        padding: 60px;
+    }
+    .skills {
+        flex-direction: column;
+    }
+    .imgtext {
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+    }
+    .imgtext.right {
+        text-align: center;
+        padding: 0px;
+    }
+    .navbar a {
+        float: none;
+        width: 100%;
+        font-size: 24px;
+        color: #00ff15;
+    }
+}
+
+
+/* Styling the fade effect when mousing over buttons */
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}

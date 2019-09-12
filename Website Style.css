@@ -4,6 +4,9 @@
 
 body {
     margin: 0;
+    padding: 0;
+    height: 100%;
+    
     font-family: Verdana, Trebuchet, Helvetica, Arial, sans-serif;
     font-size: 16px;
     text-align: left;
@@ -26,8 +29,8 @@ img {
     border: 0
 }
 
-.navbar {
-    overflow: hidden;
+header {
+    height: 52px;
     background-color: #000b30;
 
     position: fixed;
@@ -36,7 +39,7 @@ img {
     width: 100%;
 }
 
-.navbar a {
+header a {
     float: right;
     display: block;
     color: white;
@@ -47,13 +50,22 @@ img {
     font-size: 16px;  /* Don't remove this, or else it's illegible on mobile! */
 }
 
-.navbar a.top {
+header a.top {
     float: left;
 }
 
-.navbar a:hover {
+header a:hover {
     background-color: #bccbff;
     color: black;
+}
+
+
+footer {
+    height: 60px;
+    padding: 4px 40px;
+    text-align: left;
+    background: #000b30;
+    color: white;
 }
 
 
@@ -220,13 +232,6 @@ progress { color: #5cff33; }
     animation: fadeEffect 0.75s;
 }
 
-
-.footer {
-    padding: 10px 60px;
-    text-align: left;
-    background: #000b30;
-    color: white;
-}
 
 /* Styling for smaller screens */
 @media screen and (max-width: 1000px) {

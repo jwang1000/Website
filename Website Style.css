@@ -2,15 +2,17 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    height: 100%; 
     margin: 0;
     padding: 0;
-    height: 100%;
-    
     font-family: Verdana, Trebuchet, Helvetica, Arial, sans-serif;
     font-size: 16px;
     text-align: left;
     line-height: 1.5;
+
+    display: flex; 
+    flex-direction: column; 
 }
 
 /* Format warning if JS is disabled - CSS is not currently working at the moment */
@@ -61,6 +63,7 @@ header a:hover {
 
 
 footer {
+    margin-top: auto;
     height: 60px;
     padding: 4px 40px;
     text-align: left;
@@ -86,6 +89,7 @@ footer {
 }
 
 
+/* Styling progress bar colours */
 progress {
     /* reset the default appearance */
     -webkit-appearance: none;
@@ -93,8 +97,7 @@ progress {
     background-color: #c5c5c5;
 }
 
-/* Styling progress bar colours
- * Chrome/Safari */
+/* Chrome/Safari */
 progress::-webkit-progress-bar { background-color: #c5c5c5; }
 progress::-webkit-progress-value { background-color: #5cff33 !important; }
 /* Firefox */

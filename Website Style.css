@@ -81,7 +81,37 @@ footer {
     font-size: 18px;
 }
 
-/* Controls the skills section (with the buttons) */
+
+/* Styling the main page's about section */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 60px;
+    text-align: center;
+    background: #d2ddff;
+    color: black;
+}
+
+.aboutimg {
+    flex: 20%;
+}
+
+.abouttext {
+    flex: 60%;
+    text-align: right;
+}
+
+.about a {
+    float: right;
+}
+
+.about a:hover {
+    background-color: #bccbff;
+    color: black;
+}
+
+
+/* Controls the main page's skills section (with the buttons) */
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -106,7 +136,7 @@ progress::-moz-progress-bar { background-color: #5cff33 !important; }
 progress { color: #5cff33; }
 
 
-/* Section of icon buttons */
+/* Section of icon buttons in skills section */
 .icons {
     flex: 55%;
     background-color: white;
@@ -141,49 +171,6 @@ progress { color: #5cff33; }
 
 .iconlink.active {
     background-color: #ccc;
-}
-
-
-/* Section for detailed paragraphs (work experience, projects, etc.) */
-.details {
-    padding: 50px 250px 75px;
-    text-align: center;
-    background: #d2ddff;
-}
-
-.details img {
-    padding: 15px;
-}
-
-.details a {
-    float: center;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 20px;
-    transition: 0.3s;
-    text-decoration: none;
-}
-
-.details a:hover {
-    background-color: #bccbff;
-    color: black;
-}
-
-
-/* Grouping of image and text inside details sections */
-.imgtext {
-    display: flex;
-    text-align: center;
-}
-
-.imgtext.image {
-    flex: 40%;
-}
-
-.imgtext.text {
-    text-align: left;
-    flex: 60%;
 }
 
 
@@ -236,92 +223,153 @@ progress { color: #5cff33; }
 }
 
 
+/* Section for detailed paragraphs (work experience on main page) */
+.details {
+    padding: 50px 250px 75px;
+    text-align: center;
+    background: #d2ddff;
+}
+
+.details img {
+    padding: 15px;
+}
+
+.details a {
+    float: center;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.details a:hover {
+    background-color: #bccbff;
+    color: black;
+}
+
+
+/* Grouping of image and text inside details sections */
+.imgtext {
+    display: flex;
+    text-align: center;
+}
+
+.imgtext.image {
+    flex: 40%;
+}
+
+.imgtext.text {
+    text-align: left;
+    flex: 60%;
+}
+
+
+/* Styling projects page entries */
+/* Wrapper for each project entry for spacing and centering */
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+}
+
+.project p {
+    max-width: 80%;
+}
+
+.highlight {
+    max-width: auto;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+}
+
+
 /* Styling for smaller screens */
 @media screen and (max-width: 1000px) {
     .details {
-        padding: 100px;
+        padding: 60px;
     }
     .skills {
         flex-direction: column;
+        flex-flow: column;
+    }
+    .highlight {
+        max-width: 700px;
     }
 }
 
 
 @media screen and (max-width: 750px) {
+    .intro {
+        text-align: center;
+    }
     .about {
         flex-direction: column;
+        flex-flow: column;
+    }
+    .aboutimg {
+        padding: 15px 0px;
+    }
+    .abouttext {
+        text-align: left;
     }
     .details {
-        padding: 60px;
+        padding: 50px;
     }
     .imgtext {
         flex-direction: column;
         text-align: center;
         padding: 0px;
     }
+    .highlight {
+        max-width: 400px;
+    }
 }
+
 
 @media screen and (max-width: 400px) {
+    /* Ensure footer text can fit - double height */
+    footer {
+        height: 120px;
+        padding: 4px 40px;
+    }
+
     .navbar a {
         float: none;
         width: 100%;
+    }
+    /* Section of icon buttons */
+    .icons {
+        padding: 25px 15px;
+    }
+    /* Styling the icons for skills, changed by each tab */
+    .tabcontent {
+        padding: 15px 5px;
+    }
+
+    /* For details in project page, see projects.html (details is overridden) */
+
+    .project {
+        padding: 5px;   
+    }
+    .project p {
+        max-width: 100%;
+        padding: inherit;
+    }
+    .highlight {
+        max-width: 350px;
     }
 }
 
-/* Styling for mobile by detecting pixel density - supported on "all" mobile browsers 
-Currently doesn't work!
-@media screen and (-webkit-device-pixel-ratio: 2) {
-    .about {
-        flex-direction: column;
-    }
-    .details {
-        padding: 60px;
-    }
-    .skills {
-        flex-direction: column;
-    }
-    .imgtext {
-        flex-direction: column;
-        text-align: center;
-        padding: 0px;
-    }
-    .imgtext.right {
-        text-align: center;
-        padding: 0px;
-    }
-    .navbar a {
-        float: none;
-        width: 100%;
-        font-size: 24px;
-        color: #00ffff;
-    }
-}
-
-/* Styling for mobile by detecting pixel density 
-@media (min-resolution: 300dpi) {
-    .about {
-        flex-direction: column;
-    }
-    .details {
-        padding: 60px;
-    }
-    .skills {
-        flex-direction: column;
-    }
-    .imgtext {
-        flex-direction: column;
-        text-align: center;
-        padding: 0px;
-    }
-    .imgtext.right {
-        text-align: center;
-        padding: 0px;
-    }
-    .navbar a {
-        float: none;
-        width: 100%;
-        font-size: 24px;
-        color: #00ff15;
+@media screen and (max-width: 350px) {
+    .highlight {
+        max-width: 300px;
     }
 }
 

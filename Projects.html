@@ -5,8 +5,9 @@
     <title>Projects - jwang1000</title>
     <meta charset = "UTF-8">
     <meta name = "author" content = "Jonathan Wang">
+    <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
     <link rel = "stylesheet" type = "text/css" href = "Website Style.css">
-    <link rel = "icon" href = "Icons/logo1.png">
+    <link rel = "icon" href = "Icons/logofavicon.png">
 </head>
 
 
@@ -17,26 +18,11 @@
             padding: 25px 75px 50px;
         }
 
-        /* Wrapper for each project entry for spacing and centering */
-        .project {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            padding: 25px;
-            text-align: center;
-        }
-
-        .project p {
-            max-width: 80%;
-        }
-
-        .highlight {
-            max-width: auto;
-            max-height: 400px;
-            width: auto;
-            height: auto;
+        /* mobile screens */
+        @media screen and (max-width: 400px) {
+            .details {
+                padding: 25px;
+            }
         }
     </style>
 

@@ -58,3 +58,17 @@ function openDescrip(evt, iconName)
     if (iconName != "start")
         evt.currentTarget.className += " active";
 }
+
+
+// handle mobile menu opening/closing
+function toggleMenu() {
+    var x = document.getElementById("menuLinks");
+    if (x.style.display === "block")
+    {
+        x.style.display = "none";
+    }
+    else 
+    {
+        x.style.display = "block";
+    }
+}

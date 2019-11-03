@@ -357,7 +357,7 @@ progress { color: #5cff33; }
         padding: 15px 0px;
     }
     .abouttext {
-        text-align: left;
+        text-align: center;
     }
     .details {
         padding: 50px;
@@ -365,6 +365,9 @@ progress { color: #5cff33; }
     .imgtext {
         flex-direction: column;
         text-align: center;
+        padding: 0px;
+    }
+    .project {
         padding: 0px;
     }
     .highlight {
@@ -377,7 +380,7 @@ progress { color: #5cff33; }
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     /* Ensure footer text can fit - double height 
         Strange bug currently: on iPhone X, footer expands to extra height even though text fits on 1 line*/
     footer {  

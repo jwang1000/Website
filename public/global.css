@@ -11,11 +11,6 @@ html, body {
     flex-direction: column; 
 }
 
-body {
-	color: #333;
-	box-sizing: border-box;
-}
-
 img {
     width: 150px; 
     height: 150px; 

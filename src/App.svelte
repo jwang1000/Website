@@ -3,22 +3,15 @@
 	import Header from './Components/Header.svelte';
 	import Footer from './Components/Footer.svelte';
 
-	export let name;
-
 	let currentPage = "index";
 </script>
 
-<style>
-	h1 {
-		color: purple;
-	}
-</style>
-
 <svelte:head>
     <title>jwang1000</title>
-    <meta charset = "UTF-8">
-    <meta name = "author" content = "Jonathan Wang">
-    <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="author" content="Jonathan Wang">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Icons/logofavicon.png">
 </svelte:head>
 
 <Header />

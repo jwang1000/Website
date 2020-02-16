@@ -4,6 +4,8 @@
 	import Footer from './Components/Footer.svelte';
 
 	export let name;
+
+	let currentPage = "index";
 </script>
 
 <style>
@@ -21,6 +23,8 @@
 
 <Header />
 
-<Index />
+{#if currentPage === "index"}
+	<Index />
+{/if}
 
 <Footer />

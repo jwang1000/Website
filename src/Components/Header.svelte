@@ -1,6 +1,6 @@
 <style>
     noscript {
-        padding: 10px;
+        padding: 1rem 2rem;
         background: #00ff15;
     }
 

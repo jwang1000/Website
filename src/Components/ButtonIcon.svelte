@@ -10,9 +10,9 @@
 </script>
 
 <style>
-    #iconlink {
+    #buttonIcon {
         display: inline-block;
-        padding: 1rem 2rem;
+        padding: 1rem 2rem 0rem;
     }
 
     button {
@@ -43,7 +43,7 @@
     }
 </style>
 
-<div in:fade id="iconlink">
+<div in:fade id="buttonIcon">
     <button class:active={active} on:click={() => dispatch('click', caption)}>
         <img {src} alt="">
     </button>

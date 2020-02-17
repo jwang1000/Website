@@ -2,13 +2,16 @@
     import { fade } from 'svelte/transition';
     import PageIntro from '../Components/PageIntro.svelte';
     import Tab from '../Components/Tab.svelte';
-    import IconLink from '../Components/IconLink.svelte';
+    import ButtonIcon from '../Components/ButtonIcon.svelte';
     import SkillDesc from '../Components/SkillDescription.svelte';
+    import Button from '../Components/Button.svelte';
+    import Modal from '../Components/Modal.svelte';
 
     import skillstore from '../Stores/skill-store.js';
 
     let currentTab = "lang";
     let currentSkill = "";
+    let showSkillExplanation = false;
     let skills;
     const unsubscribe = skillstore.subscribe(array => {
         skills = array;
@@ -66,10 +69,21 @@
     #info {
         flex: 45%;
         background-color: #ececec;
-        padding: 3rem 4rem 2rem;
+        padding: 2rem 4rem;
+        height: 100%;
+        display: table;
     }
 
-    @media screen and (max-width: 750px) {
+    /* Display: table in #info and table-row + vertical-align bottom + height 1px are necessary to stick the
+        explanation button to the bottom of the div */
+    #showSkillButton {
+        padding: 0rem;
+        display: table-row;
+        vertical-align: bottom;
+        height: 1px;
+    }
+
+    @media screen and (max-width: 768px) {
         .aboutimg {
             padding: 1rem 0rem;
         }
@@ -78,6 +92,16 @@
         }
         .skills {
             flex-direction: column;
+        }
+        #info {
+            flex: 45%;
+            background-color: #ececec;
+            padding: 1rem 2rem 5rem;
+            display: block;
+        }
+        #showSkillButton {
+            padding: 0rem;
+            display: block;
         }
     }
 </style>
@@ -105,6 +129,29 @@
     </div>
 </section>
 
+{#if showSkillExplanation}
+    <Modal
+        title="Explanation of Skill Levels"
+        cancelText="Close"
+        on:cancel={() => showSkillExplanation = false}>
+
+        <h3>Basic</h3>
+        <p>A minimal working knowledge of the subject; enough to not need constant guidance when performing tasks.
+            Basic syntax or controls are known, but not necessarily memorized.</p>
+        <h3>Proficient</h3>
+        <p>Common syntax or controls have been committed to memory. If errors or blockers arise, enough is known
+            in order to find how to solve the problem. Using this skill for work is possible at this stage.</p>
+        <h3>Intermediate</h3>
+        <p>Several complex concepts or actions are known and can be explained. At least one major project has been
+            built or several courses have been completed using this skill. Teaching the subject to others is
+            possible at this stage.</p>
+        <h3>Advanced</h3>
+        <p>Many niche problems and concepts are recognizable and can be solved or explained with minimal searching
+            online. If applicable, most mechanics of why things work in this subject are known.
+            The skill has been used in many major projects or courses.</p>
+    </Modal>
+{/if}
+
 <section class="skills">
     <div id="icons">
         <Tab
@@ -119,7 +166,7 @@
 
         {#each skills as skill (skill.id)}
             {#if skill.tab === currentTab}
-                <IconLink caption={skill.name} src={skill.icon} active={currentSkill === skill.name} on:click={changeDescription}/>
+                <ButtonIcon caption={skill.name} src={skill.icon} active={currentSkill === skill.name} on:click={changeDescription}/>
             {/if}
         {/each}
         </Tab>
@@ -134,5 +181,19 @@
                 {/if}
             {/each}
         {/if}
+        <div id="showSkillButton">
+            <Button text="Explanation of Skill Levels" on:click={() => showSkillExplanation = true} />
+        </div>
     </div>
+</section>
+
+<section class="details">
+    <p>Testing</p>
+    <p>Testing</p>
+    <p>Testing</p>
+    <p>Testing</p>
+    <p>Testing</p>
+    <p>Testing</p>
+    <p>Testing</p>
+    <p>Testing</p>
 </section>

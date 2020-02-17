@@ -6,17 +6,25 @@
     import SkillDesc from '../Components/SkillDescription.svelte';
     import Button from '../Components/Button.svelte';
     import Modal from '../Components/Modal.svelte';
+    import Experience from '../Components/Experience.svelte';
 
     import skillstore from '../Stores/skill-store.js';
+    import expstore from '../Stores/experience-store.js';
 
     let currentTab = "lang";
     let currentSkill = "";
     let showSkillExplanation = false;
     let skills;
-    const unsubscribe = skillstore.subscribe(array => {
+    let experience;
+
+    const skillUnsubscribe = skillstore.subscribe(array => {
         skills = array;
     })
-    unsubscribe();  // store is readable, won't change
+    skillUnsubscribe();  // store is readable, won't change
+    const expUnsubscribe = expstore.subscribe(array => {
+        experience = array;
+    })
+    expUnsubscribe();
 
     function changeTab(event) {
         if (event.detail !== currentTab) {
@@ -81,6 +89,12 @@
         display: table-row;
         vertical-align: bottom;
         height: 1px;
+    }
+
+    .experience {
+        padding: 2rem 0rem;
+        text-align: center;
+        background: #d2ddff;
     }
 
     @media screen and (max-width: 768px) {
@@ -187,13 +201,10 @@
     </div>
 </section>
 
-<section class="details">
-    <p>Testing</p>
-    <p>Testing</p>
-    <p>Testing</p>
-    <p>Testing</p>
-    <p>Testing</p>
-    <p>Testing</p>
-    <p>Testing</p>
-    <p>Testing</p>
+<section class="experience">
+    <h2>Work Experience</h2>
+    {#each experience as exp}
+        <Experience name={exp.name} description={exp.description} src={exp.icon}/>
+    {/each}
+    <Button text="See Projects..."/>
 </section>

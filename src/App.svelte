@@ -1,9 +1,17 @@
 <script>
 	import Index from './Pages/index.svelte';
 	import Header from './Components/Header.svelte';
-	import Footer from './Components/Footer.svelte';
+    import Footer from './Components/Footer.svelte';
+    import Projects from './Pages/projects.svelte';
 
-	let currentPage = "index";
+    let currentPage = "index";  // can be index, projects, contact
+    
+    function changePage(event) {
+        if (event.detail !== "") {
+            currentPage = event.detail;
+        }
+        window.scrollTo(0, 0);
+    }
 </script>
 
 <svelte:head>
@@ -14,10 +22,12 @@
     <link rel="icon" type="image/png" href="Icons/logofavicon.png">
 </svelte:head>
 
-<Header />
+<Header on:changepage={changePage}/>
 
 {#if currentPage === "index"}
-	<Index />
+	<Index on:changepage={changePage}/>
+{:else if currentPage === "projects"}
+    <Projects />
 {/if}
 
 <Footer />

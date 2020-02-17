@@ -18,6 +18,12 @@
     #version {
         float: right;
     }
+
+    @media screen and (max-width: 768px) {
+        #version {
+            float: left;
+        }
+    }
 </style>
 
 <footer>

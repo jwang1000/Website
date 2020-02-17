@@ -49,10 +49,10 @@ const skills = readable([
         level: 3,
         description: [
             "I learned C++14 through CS 246: Object-Oriented Software Development at the University of Waterloo. \
-            Topics including <b>object-oriented design principles, RAII, and several design patterns</b> were covered.",
+            Topics including <b>object-oriented design principles</b>, <b>RAII</b>, and several <b>design patterns</b> were covered.",
             "As a final project, I worked in a group to write Biquadris, a two-player command line version of Tetris. \
-            This project used most concepts covered in the course, such as <b>smart pointers, the Model-View Controller, \
-            and polymorphism</b>. Access to the repo is available on request." 
+            This project used most concepts covered in the course, such as <b>smart pointers</b>, the <b>Model-View Controller</b>, \
+            and <b>polymorphism</b>." 
         ],
         id: 3
     },

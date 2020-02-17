@@ -17,9 +17,9 @@
         padding: 1rem;
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1366px) {
         #experience {
-            padding: 3rem 5rem;
+            padding: 1rem 5rem;
         }
     }
 

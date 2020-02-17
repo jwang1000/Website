@@ -1,4 +1,5 @@
 <script>
+    import { createEventDispatcher } from 'svelte';
     import { fade } from 'svelte/transition';
     import PageIntro from '../Components/PageIntro.svelte';
     import Tab from '../Components/Tab.svelte';
@@ -10,6 +11,8 @@
 
     import skillstore from '../Stores/skill-store.js';
     import expstore from '../Stores/experience-store.js';
+
+    const dispatch = createEventDispatcher();
 
     let currentTab = "lang";
     let currentSkill = "";
@@ -101,18 +104,26 @@
         .aboutimg {
             padding: 1rem 0rem;
         }
+
         .abouttext {
             text-align: center;
         }
+
         .skills {
             flex-direction: column;
         }
+
+        #icons {
+            padding: 0.5rem;
+        }
+
         #info {
             flex: 45%;
             background-color: #ececec;
             padding: 1rem 2rem 5rem;
             display: block;
         }
+
         #showSkillButton {
             padding: 0rem;
             display: block;
@@ -123,7 +134,8 @@
 <PageIntro 
     title="Jonathan Wang" 
     subtitle={["jwang1000", "Computer Science - University of Waterloo"]}
-    description={["Vancouver, BC"]} />
+    description={["Vancouver, BC"]}
+/>
 
 <section class="about">
     <div class="aboutimg">
@@ -206,5 +218,5 @@
     {#each experience as exp}
         <Experience name={exp.name} description={exp.description} src={exp.icon}/>
     {/each}
-    <Button text="See Projects..."/>
+    <Button text="See Projects..." on:click={() => dispatch('changepage', "projects")}/>
 </section>

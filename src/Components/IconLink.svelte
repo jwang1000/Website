@@ -12,7 +12,7 @@
 <style>
     #iconlink {
         display: inline-block;
-        padding: 1.5rem;
+        padding: 1rem 2rem;
     }
 
     button {

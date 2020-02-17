@@ -7,10 +7,30 @@
     const description = skill.description;
 </script>
 
+<style>
+    img {
+        width: 25px;
+        height: 25px;
+        border: 0;
+        display: inline-block;
+    }
+</style>
+
 <div in:fade id="description">
     <p><b>{name.toUpperCase()}</b></p>
 
-    <!--insert stars for skill level here-->
+    <div id="stars">
+        <img src="Icons/star.png" alt=""/>
+        {#if level > 1}
+            <img src="Icons/star.png" alt=""/>
+        {/if}
+        {#if level > 2}
+            <img src="Icons/star.png" alt=""/>
+        {/if}
+        {#if level > 3}
+            <img src="Icons/star.png" alt=""/>
+        {/if}
+    </div>
 
     {#if level === 1}
         <p>Basic</p>

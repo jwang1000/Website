@@ -66,7 +66,7 @@
     #info {
         flex: 45%;
         background-color: #ececec;
-        padding: 4rem;
+        padding: 3rem 4rem 2rem;
     }
 
     @media screen and (max-width: 750px) {

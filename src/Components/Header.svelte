@@ -58,7 +58,7 @@
 
 <header>
     <div id="home">
-        <button on:click={() => dispatch('changepage', "")}>
+        <button on:click={() => dispatch('changepage', "index")}>
             <img src="Icons/logo1.png" alt="">
         </button>
     </div>

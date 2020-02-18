@@ -3,6 +3,7 @@
 	import Header from './Components/Header.svelte';
     import Footer from './Components/Footer.svelte';
     import Projects from './Pages/projects.svelte';
+    import JumpToTop from './Components/JumpToTop.svelte';
 
     let currentPage = "index";  // can be index, projects, contact
     
@@ -29,5 +30,7 @@
 {:else if currentPage === "projects"}
     <Projects />
 {/if}
+
+<JumpToTop on:changepage={changePage}/>
 
 <Footer />

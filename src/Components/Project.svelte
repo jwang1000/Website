@@ -1,4 +1,5 @@
 <script>
+    import { fade } from 'svelte/transition';
     export let title;
     export let images;  // array of strings that are links
     export let link = "";
@@ -15,38 +16,46 @@
         padding: 10px;
         font-size: 16px;
         font-family: Verdana, Trebuchet, Helvetica, Arial, sans-serif;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        background-color: #bccbff;
     }
 
     #highlight {
+        padding: 0.25rem 0.5rem;
         max-width: auto;
         max-height: 25rem;
         width: auto;
         height: auto;
+        text-align: center;
     }
 
     @media screen and (max-width: 1366px) {
         #highlight {
             max-width: 700px;
+            padding: 0.25rem;
         }
     }
     
     @media screen and (max-width: 768px) {
         #highlight {
-            max-width: 400px;
+            max-width: 80vw;
         }
     }
 </style>
 
 <div id="project">
-    <h3>{title}</h3>
+    <h3 in:fade>{title}</h3>
 
     {#each images as image}
-        <img id="highlight" src={image} alt=""/>
+        <img in:fade id="highlight" src={image} alt=""/>
     {/each}
 
     <slot />
 
     {#if link}
-        <a href={link}>{buttonText}</a>
+        <a in:fade href={link}>{buttonText}</a>
     {/if}
 </div>

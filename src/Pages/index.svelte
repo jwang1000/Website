@@ -157,7 +157,7 @@
 
 {#if showSkillExplanation}
     <Modal
-        title="Explanation of Skill Levels"
+        title="Criteria for Skill Levels"
         cancelText="Close"
         on:cancel={() => showSkillExplanation = false}>
 
@@ -208,7 +208,7 @@
             {/each}
         {/if}
         <div id="showSkillButton">
-            <Button text="Explanation of Skill Levels" on:click={() => showSkillExplanation = true} />
+            <Button text="Criteria for Skill Levels" on:click={() => showSkillExplanation = true} />
         </div>
     </div>
 </section>

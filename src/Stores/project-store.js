@@ -64,7 +64,7 @@ const projects = readable([
     },
     {
         name: "Biquadris",
-        primaryImage: "Icons/c++.PNG",
+        primaryImage: "Icons/c++.png",
         images: [""],
         description: [
             "<b>Language: C++<br>Technologies: Java Swing Library<br>Partners: Andrew Luo, Andrew Yang</b>",

@@ -1,6 +1,11 @@
 <script>
     import { createEventDispatcher } from 'svelte';
+    import Menu from './Menu.svelte';
+
+    export let activePage = "";
+
     const dispatch = createEventDispatcher();
+    let showMobileMenu = false;
 </script>
 
 <style>
@@ -54,6 +59,35 @@
         background-color: #bccbff;
         color: black;
     }
+
+    .active {
+        background-color: #2c48a8;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #mobile button {
+        padding: 0.5rem 0.75rem;
+    }
+
+    #menuIcon {
+        width: 2rem;
+        height: 0.25rem;
+        background-color: white;
+        margin: 6px 0;
+    }
+
+    @media (max-width: 768px) {
+        #desktop {
+            display: none;
+        }
+
+        #mobile {
+            display: block;
+        }
+    }
 </style>
 
 <header>
@@ -63,9 +97,31 @@
         </button>
     </div>
     <div id="desktop">
-        <button on:click={() => dispatch('changepage', "contact")}>Contact</button>
-        <button on:click={() => dispatch('changepage', "projects")}>Projects</button>
-        <button on:click={() => dispatch('changepage', "index")}>Home</button>
+        <button 
+            class:active={activePage === "contact"} 
+            on:click={() => dispatch('changepage', "contact")}>
+            Contact
+        </button>
+        <button 
+            class:active={activePage === "projects"} 
+            on:click={() => dispatch('changepage', "projects")}>
+            Projects
+        </button>
+        <button 
+            class:active={activePage === "index"} 
+            on:click={() => dispatch('changepage', "index")}>
+            Home
+        </button>
+    </div>
+    <div id="mobile">
+        <button on:click={() => showMobileMenu = true}>
+            <div id="menuIcon"></div>
+            <div id="menuIcon"></div>
+            <div id="menuIcon"></div>
+        </button>
+        {#if showMobileMenu}
+            <Menu {activePage} on:changepage on:close={() => showMobileMenu = false}/>
+        {/if}
     </div>
 </header>
 

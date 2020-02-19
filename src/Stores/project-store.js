@@ -27,7 +27,8 @@ const projects = readable([
             "<b>Language: Python 3<br>Technologies: NumPy, MatPlotLib libraries<br>Partner: Terry Zheng</b>",
             "A solver for various optimization problems, including linear and integer programs. Includes \
             methods for validating and computing solutions, graphing feasible regions, and step by step \
-            solutions. Work in progress."
+            solutions.",
+            "Work in progress!"
         ],
         link: "https://github.com/TerrayTM/pytimize",
         buttonText: "See GitHub repo...",
@@ -35,7 +36,7 @@ const projects = readable([
     },
     {
         name: "Minesweeper Clone",
-        primaryImage: "Icons/minesweeper2.PNG",
+        primaryImage: "Icons/minesweeper.png",
         images: ["Icons/minesweeper1.PNG", "Icons/minesweeper2.PNG"],
         description: [
             "<b>Language: Java<br>Technologies: Java Swing Library</b>",
@@ -49,7 +50,7 @@ const projects = readable([
     {
         name: "jwang1000 Website",
         primaryImage: "Icons/logo1.png",
-        images: ["Icons/svelte.png", "Icons/javascript.png"],
+        images: [""],
         description: [
             "<b>Languages: HTML, CSS, JavaScript<br>Technologies: Svelte.js, Sapper.js</b>",
             "My personal responsive website, built from scratch without the use of external libraries or \
@@ -76,6 +77,19 @@ const projects = readable([
         link: "",
         buttonText: "",
         id: 3
+    },
+    {
+        name: "Star Fox 2D",
+        primaryImage: "Icons/starfoxtitle.png",
+        images: ["Icons/starfox1.PNG", "Icons/starfox2.PNG"],
+        description: [
+            "<b>Language: Python 2<br>Technologies: CodeSkulptor SimpleGUI library</b>",
+            "A 2D version of the Star Fox space shooter game, including unique enemy and boss AI as well as \
+            multiple levels."
+        ],
+        link: "https://github.com/jwang1000/Star-Fox-2D",
+        buttonText: "See GitHub repo...",
+        id: 4
     }
 ]);
 

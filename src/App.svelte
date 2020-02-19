@@ -4,6 +4,7 @@
     import Footer from './Components/Footer.svelte';
     import Projects from './Pages/projects.svelte';
     import JumpToTop from './Components/JumpToTop.svelte';
+    import Contact from './Pages/contact.svelte';
 
     let currentPage = "index";  // can be index, projects, contact
     
@@ -23,12 +24,14 @@
     <link rel="icon" type="image/png" href="Icons/logofavicon.png">
 </svelte:head>
 
-<Header on:changepage={changePage}/>
+<Header activePage={currentPage} on:changepage={changePage}/>
 
 {#if currentPage === "index"}
 	<Index on:changepage={changePage}/>
 {:else if currentPage === "projects"}
     <Projects />
+{:else if currentPage === "contact"}
+    <Contact />
 {/if}
 
 <JumpToTop on:changepage={changePage}/>

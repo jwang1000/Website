@@ -4,7 +4,7 @@
 
     const dispatch = createEventDispatcher();
 
-    const position = 100;  // how far down to display button
+    const position = 200;  // how far down to display button
     let display = false;
 
     window.onscroll = () => {

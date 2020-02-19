@@ -64,6 +64,22 @@
         display: inline-block;
     }
 
+    #dot {
+        height: 1rem;
+        width: 1rem;
+        margin: 1rem 0.25rem 0.5rem;
+        background-color: #bbb;
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        display: inline-block;
+        transition: 0.3s;
+    }
+
+    #dot.active, #dot:hover {
+        background-color: #717171;
+    }
+
     @media screen and (max-width: 1366px) {
         .projects {
             padding: 2rem 5rem;
@@ -116,6 +132,14 @@
             {/if}
         {/each}
     </div>
+
+    {#each projects as project (project.id)}
+        <button 
+            class:active="{activeProject === project.id}"
+            id="dot"
+            on:click={() => changeProject(project.id - activeProject)}>
+        </button>
+    {/each}
 
     <div id="description">
         {#each projects as project (project.id)}

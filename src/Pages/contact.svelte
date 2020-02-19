@@ -4,7 +4,7 @@
 
 <style>
     .contact {
-        padding: 2rem;
+        padding: 2rem 4rem;
         background: #d2ddff;
     }
 </style>

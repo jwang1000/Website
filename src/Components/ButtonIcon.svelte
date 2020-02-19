@@ -20,6 +20,7 @@
         float: center;
         border: none;
         outline: none;
+        border-radius: 8px;
         transition: 0.3s;
     }
 

@@ -36,7 +36,7 @@
         left: 10%;
         width: 80%;
         max-height: 80vh;
-        background: white;
+        background: #d2ddff;
         border-radius: 5px;
         z-index: 100;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);

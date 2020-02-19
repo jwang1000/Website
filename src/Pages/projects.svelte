@@ -51,6 +51,7 @@
         background: rgba(0, 0, 0, 0.2);
         border: none;
         outline: none;
+        border-radius: 4px;
         transition: 0.3s;
     }
 

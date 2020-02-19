@@ -1,9 +1,20 @@
 <script>
     import { createEventDispatcher } from 'svelte';
+    import { fly } from 'svelte/transition';
 
     const dispatch = createEventDispatcher();
 
-    $: position = Math.max(document.documentElement.scrollTop, document.body.scrollTop);
+    const position = 100;  // how far down to display button
+    let display = false;
+
+    window.onscroll = () => {
+        if (document.body.scrollTop > position || document.documentElement.scrollTop > position) {
+            display = true;
+        }
+        else {
+            display = false;
+        }
+    }
 </script>
 
 <style>
@@ -19,6 +30,7 @@
         color: white;
         outline: none;
         border: none;
+        border-radius: 8px;
         padding: 0.5rem 1.25rem 0.75rem;
         font-size: 1.5rem;
         font-family: Verdana, Trebuchet, Helvetica, Arial, sans-serif;
@@ -37,8 +49,8 @@
     }
 </style>
 
-{#if position >= 0}
-    <section class="jumpToTop">
+{#if display}
+    <section transition:fly={{x:0, y:100}} class="jumpToTop">
         <button on:click={() => dispatch('changepage', "")}>&#8593</button>
     </section>
 {/if}

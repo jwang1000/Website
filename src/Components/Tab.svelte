@@ -31,6 +31,7 @@
         float: center;
         border: none;
         outline: none;
+        border-radius: 8px;
         cursor: pointer;
         padding: 1rem 1.5rem;
         transition: 0.3s;

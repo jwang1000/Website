@@ -1,10 +1,11 @@
 <script>
     export let text = "";
     export let disabled = false;
+    export let link;
 </script>
 
 <style>
-    button {
+    a {
         padding: 12px;
         font-size: 16px;
         font-family: Verdana, Trebuchet, Helvetica, Arial, sans-serif;
@@ -20,11 +21,9 @@
         background-color: #ddd;
     }
 
-    button:hover {
+    a:hover {
         background-color: #0080ff;
     }
 </style>
 
-<button class:disabled="{disabled}" {disabled} on:click>
-    {text}
-</button>
+<a class:disabled={disabled} href={link}>{text}</a>

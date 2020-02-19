@@ -1,5 +1,7 @@
 <script>
     import { fade } from 'svelte/transition';
+    import Hyperlink from './Hyperlink.svelte';
+
     export let title;
     export let images;  // array of strings that are links
     export let link = "";
@@ -12,17 +14,6 @@
         text-align: center;
     }
 
-    a {
-        padding: 10px;
-        font-size: 16px;
-        font-family: Verdana, Trebuchet, Helvetica, Arial, sans-serif;
-        transition: 0.3s;
-    }
-
-    a:hover {
-        background-color: #bccbff;
-    }
-
     #highlight {
         padding: 0.25rem 0.5rem;
         max-width: auto;
@@ -30,6 +21,10 @@
         width: auto;
         height: auto;
         text-align: center;
+    }
+
+    #link {
+        padding: 1rem;
     }
 
     @media screen and (max-width: 1366px) {
@@ -56,6 +51,8 @@
     <slot />
 
     {#if link}
-        <a in:fade href={link}>{buttonText}</a>
+        <div id="link" in:fade>
+            <Hyperlink {link} text={buttonText} />
+        </div>
     {/if}
 </div>

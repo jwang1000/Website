@@ -131,6 +131,10 @@
     }
 </style>
 
+<svelte:head>
+    <title>jwang1000</title>
+</svelte:head>
+
 <PageIntro 
     title="Jonathan Wang" 
     subtitle={["jwang1000", "Computer Science - University of Waterloo"]}

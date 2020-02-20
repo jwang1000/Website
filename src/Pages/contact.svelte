@@ -9,6 +9,10 @@
     }
 </style>
 
+<svelte:head>
+    <title>Contact - jwang1000</title>
+</svelte:head>
+
 <PageIntro 
     title="Contact" 
     subtitle={["jwang1000"]}

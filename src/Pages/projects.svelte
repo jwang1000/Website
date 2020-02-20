@@ -107,6 +107,10 @@
     }
 </style>
 
+<svelte:head>
+    <title>Projects - jwang1000</title>
+</svelte:head>
+
 <PageIntro 
     title="Projects" 
     subtitle={["jwang1000"]}

@@ -64,8 +64,8 @@ const projects = readable([
     },
     {
         name: "Biquadris",
-        primaryImage: "Icons/c++.png",
-        images: [""],
+        primaryImage: "Icons/biquadris.png",
+        images: ["Icons/biquadris1.png", "Icons/biquadris2.png"],
         description: [
             "<b>Language: C++<br>Technologies: Java Swing Library<br>Partners: Andrew Luo, Andrew Yang</b>",
             "A two-player, command line version of Tetris. Actions are non-realtime, and updates a graphical \

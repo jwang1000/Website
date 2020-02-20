@@ -124,8 +124,8 @@ const skills = readable([
         description: [
             "I first learned Svelte, a JavaScript compiler, as part of my second internship at Terradatum. Using Svelte, \
             I built <b>TD-Admin</b> from scratch, which is a single-page web administrative application for Terradatum.",
-            "I then used Svelte in conjunction with <b>Sapper</b> to create the current version of jwang1000.com, \
-            as opposed to the first version, which used standard HTML, CSS, and JavaScript." 
+            "I then used Svelte to create the current version of jwang1000.com (the website you're on!), which is much \
+            more easily maintained than the previous HTML, CSS, and JavaScript codebase." 
         ],
         id: 20
     },

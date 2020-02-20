@@ -52,11 +52,11 @@ const projects = readable([
         primaryImage: "Icons/logo1.png",
         images: [""],
         description: [
-            "<b>Languages: HTML, CSS, JavaScript<br>Technologies: Svelte.js, Sapper.js</b>",
+            "<b>Languages: HTML, CSS, JavaScript<br>Technologies: Svelte.js</b>",
             "My personal responsive website, built from scratch without the use of external libraries or \
             stylesheets. You're on it right now!",
-            "I rewrote the website using the Svelte compiler for version 2.0, and used Sapper to enable page \
-            routing and static page hosting."
+            "I wrote version 2.0 of the website using the Svelte compiler, which enabled additional enhancements \
+            and an easily maintainable codebase."
         ],
         link: "https://github.com/jwang1000/Website",
         buttonText: "See GitHub repo...",

@@ -263,7 +263,7 @@ const skills = readable([
         name: "Microsoft Office",
         tab: "software",
         icon: "Icons/office.png",
-        level: 4,
+        level: 3,
         description: [
             "I use various programs in the Microsoft Office Suite, such as Word and Excel, on a near-daily basis \
             for schoolwork and record keeping, as I have for more than seven years." 

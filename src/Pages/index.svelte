@@ -64,7 +64,12 @@
     }
 
     .skills {
+        /* Add displays for different browsers */
+        display: -webkit-box;  /* old safari */
+        display: -moz-box;  /* old firefox */
+        display: -webkit-flex;  /* chrome */
         display: flex;
+        -webkit-flex-direction: row;
         flex-direction: row;
         text-align: center;
     }
@@ -74,15 +79,17 @@
         flex: 55%;
         background-color: white;
         padding: 2rem;
+        max-width: 55%;
     }
 
     /* The section for displaying information about each icon/skill */
     #info {
-        flex: 45%;
+        flex: 2 1 45%;
         background-color: #ececec;
         padding: 2rem 4rem;
         height: 100%;
         display: table;
+        max-width: 45%;
     }
 
     /* Display: table in #info and table-row + vertical-align bottom + height 1px are necessary to stick the
@@ -115,6 +122,7 @@
 
         #icons {
             padding: 0.5rem;
+            max-width: 100%;
         }
 
         #info {
@@ -122,6 +130,7 @@
             background-color: #ececec;
             padding: 1rem 2rem 5rem;
             display: block;
+            max-width: 100;
         }
 
         #showSkillButton {
@@ -132,7 +141,7 @@
 </style>
 
 <svelte:head>
-    <title>jwang1000</title>
+    <title>Home - jwang1000</title>
 </svelte:head>
 
 <PageIntro 

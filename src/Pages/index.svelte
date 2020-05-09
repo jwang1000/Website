@@ -64,12 +64,7 @@
     }
 
     .skills {
-        /* Add displays for different browsers */
-        display: -webkit-box;  /* old safari */
-        display: -moz-box;  /* old firefox */
-        display: -webkit-flex;  /* chrome */
         display: flex;
-        -webkit-flex-direction: row;
         flex-direction: row;
         text-align: center;
     }
@@ -87,8 +82,8 @@
         flex: 2 1 45%;
         background-color: #ececec;
         padding: 2rem 4rem;
-        height: 100%;
-        display: table;
+        display: flex;
+        flex-direction: column;
         max-width: 45%;
     }
 
@@ -96,9 +91,7 @@
         explanation button to the bottom of the div */
     #showSkillButton {
         padding: 0rem;
-        display: table-row;
-        vertical-align: bottom;
-        height: 1px;
+        margin-top: auto;
     }
 
     .experience {
@@ -128,9 +121,9 @@
         #info {
             flex: 45%;
             background-color: #ececec;
-            padding: 1rem 2rem 5rem;
+            padding: 1rem 2rem 2rem;
             display: block;
-            max-width: 100;
+            max-width: 100vw;
         }
 
         #showSkillButton {

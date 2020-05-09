@@ -55,7 +55,7 @@ const projects = readable([
             "<b>Languages: HTML, CSS, JavaScript<br>Technologies: Svelte</b>",
             "My personal responsive website, built from scratch without the use of external libraries or \
             stylesheets. You're on it right now!",
-            "I wrote version 2.0 of the website using the Svelte compiler, which enabled additional enhancements \
+            "I wrote the second version of the website using the Svelte compiler, which enabled additional enhancements \
             and an easily maintainable codebase."
         ],
         link: "https://github.com/jwang1000/Website",

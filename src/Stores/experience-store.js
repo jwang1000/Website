@@ -18,7 +18,7 @@ const experience = readable([
             "At my first term as an intern at Terradatum, I used <b>Docker</b> and Docker Compose \
             to containerize the company's pre-existing applications, and used Postman and \
             Newman to automate testing of the APIs and scripts in use.",
-            "During my second term as an intern, I used JavaScript with the <b>Svelte</b> compiler \
+            "During my second term as an intern, I used JavaScript and the <b>Svelte</b> compiler \
             to build TD-Admin, a single-page web application for administrative purposes. I also applied \
             my knowledge of Docker to containerize and deploy TD-Admin."
         ]

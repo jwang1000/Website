@@ -170,17 +170,20 @@
         <h3>Basic</h3>
         <p>A minimal working knowledge of the subject; enough to not need constant guidance when performing tasks.
             Basic syntax or controls are known, but not necessarily memorized.</p>
+
         <h3>Proficient</h3>
         <p>Common syntax or controls have been committed to memory. If errors or blockers arise, enough is known
-            in order to find how to solve the problem. Using this skill for work is possible at this stage.</p>
+            in order to find how to solve the problem. The skill can be used for work at this stage.</p>
+
         <h3>Intermediate</h3>
         <p>Several complex concepts or actions are known and can be explained. At least one major project has been
-            built or several courses have been completed using this skill. Teaching the subject to others is
-            possible at this stage.</p>
+            built or one full course has been completed using this skill. The skill can be taught to others at
+            this stage.</p>
+            
         <h3>Advanced</h3>
-        <p>Many niche problems and concepts are recognizable and can be solved or explained with minimal searching
-            online. If applicable, most mechanics of why things work in this subject are known.
-            The skill has been used in many major projects or courses.</p>
+        <p>Many niche problems and concepts are recognizable and can be solved or explained with minimal searching.
+            If applicable, many mechanics of why things work in this subject are known.
+            The skill has been used in several major projects or courses.</p>
     </Modal>
 {/if}
 

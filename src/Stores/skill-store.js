@@ -38,7 +38,9 @@ const skills = readable([
         level: 3,
         description: [
             "In Java, I created a fully-functioning clone of Minesweeper, including custom difficulty and board sizes, and high scores. \
-            I used the <b>Java Swing</b> library to implement the graphics, and the scanner to implement file I/O." 
+            I used the <b>Java Swing</b> library to implement the graphics, and the scanner to implement file I/O. While working on this \
+            project, I used <b>object-oriented design principles</b> to keep the codebase easily modifiable and to take advantage of \
+            pre-existing code." 
         ],
         id: 1
     },
@@ -63,7 +65,7 @@ const skills = readable([
         level: 3,
         description: [
             "I transitioned to C# from Java and I am learning to develop games in <b>Unity</b>. \
-            I am currently working on GalakForce, a 3<sup>rd</sup> person top-down shooter." 
+            I am currently working on GalakForce, a top-down shooter, as well as other games using the Microsoft XNA Framework." 
         ],
         id: 2
     },
@@ -88,7 +90,7 @@ const skills = readable([
             a single-page web administration application.",
             "Throughout this process, I used asynchronous RESTful requests and added many sorting and searching capabilities \
             using JS, including filtering by time/date with local timezones and dynamically updating tables with new filters.",
-            "I also used JS to build the current version of jwang1000.com, which uses Svelte as well."
+            "I also used JS and Svelte to build the current version of jwang1000.com."
         ],
         id: 5
     },
@@ -98,7 +100,7 @@ const skills = readable([
         icon: "Icons/html5.png",
         level: 3,
         description: [
-            "I used HTML in building both my website and TD-Admin at my internship with Terradatum. I used online resources such \
+            "I used HTML in building both TD-Admin at my internship with Terradatum and my personal website. I used online resources such \
             as W3Schools to teach myself, and wrote the original version of jwang1000.com as practice." 
         ],
         id: 6
@@ -110,7 +112,7 @@ const skills = readable([
         level: 2,
         description: [
             "I used CSS to build my website and at my internship at Terradatum. Similarly to HTML, I used online resources to \
-            learn the required knowledge. I did not use any external libraries to write this site." 
+            learn the required knowledge. I did not use any external CSS libraries to write this site." 
         ],
         id: 7
     },
@@ -125,7 +127,7 @@ const skills = readable([
             "I first learned Svelte, a JavaScript compiler, as part of my second internship at Terradatum. Using Svelte, \
             I built <b>TD-Admin</b> from scratch, which is a single-page web administrative application for Terradatum.",
             "I then used Svelte to create the current version of jwang1000.com (the website you're on!), which is much \
-            more easily maintained than the previous HTML, CSS, and JavaScript codebase." 
+            more easily maintained than the previous codebase, made of the standard HTML, CSS, and JavaScript." 
         ],
         id: 20
     },
@@ -136,7 +138,8 @@ const skills = readable([
         level: 2,
         description: [
             "I used Docker to containerize several pre-existing applications for my first internship at Terradatum, \
-            and coordinated multiple containers using <b>Docker Compose</b>." 
+            and coordinated multiple containers using <b>Docker Compose</b>. I used Docker again in my second term at \
+            Terradatum to containerize TD-Admin for deployment." 
         ],
         id: 21
     },
@@ -182,6 +185,7 @@ const skills = readable([
         ],
         id: 24
     },
+
     // SOFTWARE
     {
         name: "VS Code",
@@ -263,7 +267,7 @@ const skills = readable([
         name: "Microsoft Office",
         tab: "software",
         icon: "Icons/office.png",
-        level: 4,
+        level: 3,
         description: [
             "I use various programs in the Microsoft Office Suite, such as Word and Excel, on a near-daily basis \
             for schoolwork and record keeping, as I have for more than seven years." 

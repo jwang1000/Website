@@ -18,6 +18,7 @@
 
     .disabled {
         background-color: #ddd;
+        cursor: default;
     }
 
     button:hover {

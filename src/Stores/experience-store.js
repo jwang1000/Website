@@ -7,10 +7,20 @@ import { readable } from 'svelte/store';
  * 
  * icon: string (link to image location)
  * 
- * description: array[string] (each string = 1 paragraph) HTML tags are valid! This shouldn't
- * compromise anything, since there is no user input available.
+ * description: array[string] (each string = 1 paragraph)
+ * HTML tags are valid! This shouldn't cause XSS attacks, since there is no user input available.
  */
 const experience = readable([
+    {
+        name: "MDA",
+        icon: "Icons/MDA.png",
+        description: [
+            "As an intern at MDA, I fixed bugs and added features to both the frontend and backend of \
+            the primary web application. I created reusable <b>Angular</b> components for the shared component \
+            library and refactored parts of the web app to simplify the codebase and follow best practices, \
+            including improving documentation and removing redundancies."
+        ]
+    },
     {
         name: "Terradatum",
         icon: "Icons/terradatum.png",

@@ -41,8 +41,8 @@ const skills = readable([
             I used the <b>Java Swing</b> library to implement the graphics, and the scanner to implement file I/O. While working on this \
             project, I used <b>object-oriented design principles</b> to keep the codebase easily modifiable and to take advantage of \
             pre-existing code.",
-            "Additionally, at MDA I used Java to work on the backend of the main web app. I fixed various bugs and refactored parts of \
-            the codebase to remove redundancy."
+            "At MDA, I used Java to work on the backend of the main web app. I fixed various bugs and refactored parts of the codebase \
+            to remove redundancy. I worked with the Lombok library and wrote and maintained <b>unit tests</b> using Mockito."
         ],
         id: 1
     },
@@ -101,9 +101,10 @@ const skills = readable([
         icon: "Icons/typescript.png",
         level: 3,
         description: [
-            "I used TypeScript with <b>Angular</b> to develop the frontend of the main web app at MDA. I created reusable components \
-            for the shared component library and improved parts of the documentation. I also helped improve the efficiency of the \
-            app through refactoring redundant code and changing the code to use new components."
+            "I used TypeScript with <b>Angular</b> to develop the frontend of the main web app at MDA. I created reusable \
+            components for the shared component library and improved parts of the documentation. I also helped improve the \
+            efficiency of the app through refactoring redundant code and changing the code to use new components. I wrote \
+            and maintained <b>unit tests</b> using Mocha."
         ],
         id: 6
     },

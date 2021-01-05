@@ -15,10 +15,13 @@ const experience = readable([
         name: "MDA",
         icon: "Icons/MDA.png",
         description: [
-            "As an intern at MDA, I fixed bugs and added features to both the frontend and backend of \
-            the primary web application. I created reusable <b>Angular</b> components for the shared component \
-            library and refactored parts of the web app to simplify the codebase and follow best practices, \
-            including improving documentation and removing redundancies."
+            "As an intern at MDA, I worked as a full stack developer by fixing bugs and adding features to \
+            both the frontend and backend of the primary web application. I created reusable <b>Angular</b> \
+            components for the shared component library and refactored parts of the web app to simplify the \
+            codebase and follow best practices, including improving documentation and removing redundancies.",
+            "I used <b>TypeScript</b> to work on the frontend of the web app and used <b>Java</b> in the \
+            backend, where I gained experience in using the Lombok library and developing a REST API. I also \
+            wrote and maintained <b>unit tests</b> using Mockito in the backend and Mocha in the frontend."
         ]
     },
     {

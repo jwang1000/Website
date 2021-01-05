@@ -28,7 +28,8 @@ const projects = readable([
             "A solver for various optimization problems, including linear and integer programs. Includes \
             methods for validating and computing solutions, graphing feasible regions, and step by step \
             solutions.",
-            "Work in progress!"
+            "Work in progress! Contributions are welcome—Pytimize is open source and licensed under \
+            the Apache License 2.0."
         ],
         link: "https://github.com/TerrayTM/pytimize",
         buttonText: "See GitHub repo...",

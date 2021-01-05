@@ -27,6 +27,6 @@
 </style>
 
 <footer>
-    <p id="copyright">Written by and &#169 Jonathan Wang 2019 - 2020.</p>
-    <p id="version">Version 2.1. Built with Svelte.</p>
+    <p id="copyright">Written by and &#169 Jonathan Wang 2019 - 2021.</p>
+    <p id="version">Version 2.2. Built with Svelte.</p>
 </footer>

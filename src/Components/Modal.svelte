@@ -6,6 +6,7 @@
     export let title;
     export let confirmText = "";
     export let cancelText = "Cancel";
+    export let centreText = false;
 
     // allow the modal to be closed
     const dispatch = createEventDispatcher();
@@ -55,6 +56,10 @@
         padding: 1rem;
     }
 
+    .centreText {
+        text-align: center;
+    }
+
     footer {
         padding: 1rem;
         text-align: center;
@@ -71,7 +76,7 @@
 <div transition:fade class="modal-backdrop" on:click={closeModal}></div>
 <div transition:fly={{y: 300}} class="modal">
     <h1>{title}</h1>
-    <div class="content">
+    <div class="content" class:centreText={centreText}>
         <slot />
     </div>
     <footer>

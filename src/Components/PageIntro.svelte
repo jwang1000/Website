@@ -17,6 +17,12 @@
     h1 {
         font-size: 40px;
     }
+
+    @media screen and (max-width: 350px) {
+        .intro {
+            text-align: center;
+        }
+    }
 </style>
 
 <section class = "intro">

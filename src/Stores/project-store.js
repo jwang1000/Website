@@ -16,7 +16,7 @@ import { readable } from 'svelte/store';
  * 
  * buttonText: string (text for hyperlink ubtton, set to "" if not needed)
  * 
- * id: int (assign manually - used for which point in the slidewho)
+ * id: int (assign manually - used for which point in the slideshow)
  */
 const projects = readable([
     {
@@ -24,11 +24,12 @@ const projects = readable([
         primaryImage: "Icons/pytimize.png",
         images: ["Icons/optimization1.PNG", "Icons/optimization2.PNG"],
         description: [
-            "<b>Language: Python 3<br>Technologies: NumPy, MatPlotLib libraries<br>Partner: Terry Zheng</b>",
+            "<b>Language: Python 3<br>Technologies: NumPy, MatPlotLib</b>",
             "A solver for various optimization problems, including linear and integer programs. Includes \
             methods for validating and computing solutions, graphing feasible regions, and step by step \
             solutions.",
-            "Work in progress!"
+            "Work in progress! Contributions are welcome—Pytimize is open source and licensed under \
+            the Apache License 2.0."
         ],
         link: "https://github.com/TerrayTM/pytimize",
         buttonText: "See GitHub repo...",
@@ -39,7 +40,7 @@ const projects = readable([
         primaryImage: "Icons/minesweeper.png",
         images: ["Icons/minesweeper1.PNG", "Icons/minesweeper2.PNG"],
         description: [
-            "<b>Language: Java<br>Technologies: Java Swing Library</b>",
+            "<b>Language: Java<br>Technologies: Java Swing</b>",
             "A clone of the game Minesweeper with the original early Windows graphics. Complete \
             with custom board sizes, pre-built difficulty settings, and persistent high scores."
         ],
@@ -67,7 +68,7 @@ const projects = readable([
         primaryImage: "Icons/biquadris.png",
         images: ["Icons/biquadris1.png", "Icons/biquadris2.png"],
         description: [
-            "<b>Language: C++<br>Technologies: Java Swing Library<br>Partners: Andrew Luo, Andrew Yang</b>",
+            "<b>Language: C++</b>",
             "A two-player, command line version of Tetris. Actions are non-realtime, and updates a graphical \
             representation of the two grids. Additional features such as negative effects (blindness, heaviness) \
             were added to enhance the multiplayer aspect.",
@@ -83,7 +84,7 @@ const projects = readable([
         primaryImage: "Icons/starfoxtitle.png",
         images: ["Icons/starfox1.PNG", "Icons/starfox2.PNG"],
         description: [
-            "<b>Language: Python 2<br>Technologies: CodeSkulptor SimpleGUI library</b>",
+            "<b>Language: Python 2<br>Technologies: CodeSkulptor SimpleGUI</b>",
             "A 2D version of the Star Fox space shooter game, including unique enemy and boss AI as well as \
             multiple levels."
         ],

@@ -17,3 +17,7 @@ img {
     height: 150px; 
     border: 0
 }
+
+button {
+    cursor: pointer;
+}

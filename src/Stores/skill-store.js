@@ -40,7 +40,9 @@ const skills = readable([
             "In Java, I created a fully-functioning clone of Minesweeper, including custom difficulty and board sizes, and high scores. \
             I used the <b>Java Swing</b> library to implement the graphics, and the scanner to implement file I/O. While working on this \
             project, I used <b>object-oriented design principles</b> to keep the codebase easily modifiable and to take advantage of \
-            pre-existing code." 
+            pre-existing code.",
+            "Additionally, at MDA I used Java to work on the backend of the main web app. I fixed various bugs and refactored parts of \
+            the codebase to remove redundancy."
         ],
         id: 1
     },
@@ -64,8 +66,7 @@ const skills = readable([
         icon: "Icons/csharp.png",
         level: 3,
         description: [
-            "I transitioned to C# from Java and I am learning to develop games in <b>Unity</b>. \
-            I am currently working on GalakForce, a top-down shooter, as well as other games using the Microsoft XNA Framework." 
+            "I transitioned to C# from Java and I am learning to develop games in <b>Unity</b> and Microsoft's XNA Framework."
         ],
         id: 2
     },
@@ -88,11 +89,23 @@ const skills = readable([
         description: [
             "I used JavaScript in my second term as an intern at Terradatum. Using <b>Svelte</b>, I wrote TD-Admin from scratch, \
             a single-page web administration application.",
-            "Throughout this process, I used asynchronous RESTful requests and added many sorting and searching capabilities \
-            using JS, including filtering by time/date with local timezones and dynamically updating tables with new filters.",
+            "At MDA, I used TypeScript and <b>Angular</b> to work on the frontend of the main web app, including creating new \
+            reusable components and fixing bugs.",
             "I also used JS and Svelte to build the current version of jwang1000.com."
         ],
         id: 5
+    },
+    {
+        name: "TypeScript",
+        tab: "lang",
+        icon: "Icons/typescript.png",
+        level: 3,
+        description: [
+            "I used TypeScript with <b>Angular</b> to develop the frontend of the main web app at MDA. I created reusable components \
+            for the shared component library and improved parts of the documentation. I also helped improve the efficiency of the \
+            app through refactoring redundant code and changing the code to use new components."
+        ],
+        id: 6
     },
     {
         name: "HTML",
@@ -100,10 +113,10 @@ const skills = readable([
         icon: "Icons/html5.png",
         level: 3,
         description: [
-            "I used HTML in building both TD-Admin at my internship with Terradatum and my personal website. I used online resources such \
+            "I used HTML in my internships with Terradatum and MDA, as well as my personal website. I used online resources such \
             as W3Schools to teach myself, and wrote the original version of jwang1000.com as practice." 
         ],
-        id: 6
+        id: 7
     },
     {
         name: "CSS",
@@ -111,13 +124,25 @@ const skills = readable([
         icon: "Icons/css3.png",
         level: 2,
         description: [
-            "I used CSS to build my website and at my internship at Terradatum. Similarly to HTML, I used online resources to \
+            "I used CSS to build my website and at my internships at Terradatum and MDA. Similarly to HTML, I used online resources to \
             learn the required knowledge. I did not use any external CSS libraries to write this site." 
         ],
-        id: 7
+        id: 8
     },
 
     // TECHNOLOGIES
+    {
+        name: "Angular",
+        tab: "tech",
+        icon: "Icons/angular.png",
+        level: 3,
+        description: [
+            "I used Angular to work on the frontend of the primary web application being developed by MDA. I created reusable \
+            components for the shared component library and refactored parts of the web app to follow best coding practices such \
+            as avoiding redundancy and improving readability."
+        ],
+        id: 20
+    },
     {
         name: "Svelte",
         tab: "tech",
@@ -129,7 +154,7 @@ const skills = readable([
             "I then used Svelte to create the current version of jwang1000.com (the website you're on!), which is much \
             more easily maintained than the previous codebase, made of the standard HTML, CSS, and JavaScript." 
         ],
-        id: 20
+        id: 21
     },
     {
         name: "Docker",
@@ -141,7 +166,7 @@ const skills = readable([
             and coordinated multiple containers using <b>Docker Compose</b>. I used Docker again in my second term at \
             Terradatum to containerize TD-Admin for deployment." 
         ],
-        id: 21
+        id: 22
     },
     {
         name: "NumPy",
@@ -151,7 +176,7 @@ const skills = readable([
         description: [
             "I am currently using NumPy in Python 3 to work on <b>Pytimize</b>, a solver for various optimization problems." 
         ],
-        id: 22
+        id: 23
     },
     {
         name: "MatPlotLib",
@@ -162,7 +187,7 @@ const skills = readable([
             "I used MatPlotLib in Python 3 to create a part of <b>Pytimize</b>; I wrote a method to graph feasible regions \
             of linear programs." 
         ],
-        id: 23
+        id: 24
     },
     {
         name: "Postman",
@@ -183,7 +208,7 @@ const skills = readable([
         description: [
             "I am working on in-progress games in C# that use the Microsoft XNA Framework." 
         ],
-        id: 24
+        id: 26
     },
 
     // SOFTWARE
@@ -193,8 +218,8 @@ const skills = readable([
         icon: "Icons/vs code.png",
         level: 3,
         description: [
-            "I use Visual Studio Code for general software development, including my internships at Terradatum. I use VS Code \
-            for all of my Python and web app code."
+            "I use Visual Studio Code for general software development, including my internships at Terradatum and MDA. I \
+            use VS Code for all of my Python and web app development."
         ],
         id: 40
     },
@@ -215,8 +240,8 @@ const skills = readable([
         icon: "Icons/unity.png",
         level: 2,
         description: [
-            "I use Unity 3D for the development of my newest game, GalakForce. I primarily work with sprites for the \
-            graphics of GalakForce, and I have used plugins and addons such as Introloop." 
+            "I use Unity 3D for the development of various games. I primarily work with sprites for the graphics, and \
+            I have used plugins and addons such as Introloop." 
         ],
         id: 42
     },

@@ -63,6 +63,26 @@
         text-align: right;
     }
 
+    .skillCriteriaTitle {
+        display: inline-block;
+    }
+
+    .skillCriteriaTitle img {
+        width: 25px;
+        height: 25px;
+        border: 0;
+        display: inline-block;
+
+        position: relative;
+        top: 5px;
+    }
+
+    .skillCriteriaTitle h3 {
+        display: inline;
+        padding-right: 1rem;
+        padding-top: 1.5rem;
+    }
+
     .skills {
         display: flex;
         flex-direction: row;
@@ -109,6 +129,10 @@
             text-align: center;
         }
 
+        .skillExplanation {
+            text-align: center;
+        }
+
         .skills {
             flex-direction: column;
         }
@@ -129,6 +153,18 @@
         #showSkillButton {
             padding: 0rem;
             display: block;
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        /* Display skill title and stars on different lines */
+        .skillCriteriaTitle h3 {
+            display: block;
+            padding: 0;
+        }
+
+        .skillCriteriaTitle img {
+            top: 0;
         }
     }
 </style>
@@ -166,24 +202,41 @@
         title="Criteria for Skill Levels"
         cancelText="Close"
         on:cancel={() => showSkillExplanation = false}>
+        <div class="skillExplanation">
+            <p>All skills listed can be used for work; the differences are in the levels of guidance needed.</p>
 
-        <h3>Basic</h3>
-        <p>A minimal working knowledge of the subject; enough to not need constant guidance when performing tasks.
-            Basic syntax or controls are known, but not necessarily memorized.</p>
+            <div class="skillCriteriaTitle">
+                <h3>Basic</h3>
+                <img src="Icons/star.png" alt=""/>
+            </div>
+            <p>A minimal working knowledge of the subject; enough to not need constant guidance when performing tasks.</p>
 
-        <h3>Proficient</h3>
-        <p>Common syntax or controls have been committed to memory. If errors or blockers arise, enough is known
-            in order to find how to solve the problem. The skill can be used for work at this stage.</p>
+            <div class="skillCriteriaTitle">
+                <h3>Proficient</h3>
+                <img src="Icons/star.png" alt=""/>
+                <img src="Icons/star.png" alt=""/>
+            </div>
+            <p>Enough is known in order to find solutions to various situations and problems independently.</p>
 
-        <h3>Intermediate</h3>
-        <p>Several complex concepts or actions are known and can be explained. At least one major project has been
-            built or one full course has been completed using this skill. The skill can be taught to others at
-            this stage.</p>
-            
-        <h3>Advanced</h3>
-        <p>Many niche problems and concepts are recognizable and can be solved or explained with minimal searching.
-            If applicable, many mechanics of why things work in this subject are known.
-            The skill has been used in several major projects or courses.</p>
+            <div class="skillCriteriaTitle">
+                <h3>Intermediate</h3>
+                <img src="Icons/star.png" alt=""/>
+                <img src="Icons/star.png" alt=""/>
+                <img src="Icons/star.png" alt=""/>
+            </div>
+            <p>Various features of the skill have been explored or experimented with. The skill is well understood enough
+                to teach others.</p>
+                
+            <div class="skillCriteriaTitle">
+                <h3>Advanced</h3>
+                <img src="Icons/star.png" alt=""/>
+                <img src="Icons/star.png" alt=""/>
+                <img src="Icons/star.png" alt=""/>
+                <img src="Icons/star.png" alt=""/>
+            </div>
+            <p>Prior experience in many niche problems and concepts, which can be solved or explained with minimal searching.
+                Recognized as an expert or authority in this skill.</p>
+        </div>
     </Modal>
 {/if}
 

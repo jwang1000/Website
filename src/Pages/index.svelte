@@ -121,8 +121,12 @@
     }
 
     @media screen and (max-width: 768px) {
+        .about {
+            padding: 4rem 4rem;
+        }
+
         .aboutimg {
-            padding: 1rem 0rem;
+            padding: 1rem;
         }
 
         .abouttext {
@@ -153,6 +157,12 @@
         #showSkillButton {
             padding: 0rem;
             display: block;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .about {
+            padding: 4rem 2rem;
         }
     }
 

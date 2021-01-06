@@ -106,6 +106,11 @@
         Projects
     </button>
     <button id="page"
+        class:active={activePage === "education"} 
+        on:click={() => dispatch('changepage', "education")}>
+        Education
+    </button>
+    <button id="page"
         class:active={activePage === "contact"} 
         on:click={() => dispatch('changepage', "contact")}>
         Contact

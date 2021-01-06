@@ -4,6 +4,7 @@
     // set by parent component, must be array of objects with name and event fields
     export let tabs = [];
     export let title = "";
+    export let buttonsAlsoAtBottom = false;
 
     const dispatch = createEventDispatcher();
     let activeTab;
@@ -69,4 +70,19 @@
     <!--insert contents of each tab in the parent component
         choose which tab contents to show through if block, update using on:changetab-->
     <slot />
+
+    {#if buttonsAlsoAtBottom}
+        <section class="tabs">
+            {#each tabs as tab}
+                <button class:active="{tab.name === activeTab.name}"
+                    text={tab.name} 
+                    on:click={() => {
+                        dispatch('changetab', tab.event);
+                        toggleActive(tab); 
+                    }}>
+                    {tab.name}
+                </button>
+            {/each}
+        </section>
+    {/if}
 </section>

@@ -5,6 +5,7 @@
     import Projects from './Pages/projects.svelte';
     import JumpToTop from './Components/JumpToTop.svelte';
     import Contact from './Pages/contact.svelte';
+    import Education from './Pages/education.svelte';
 
     let currentPage = "index";  // can be index, projects, contact
     
@@ -29,6 +30,8 @@
 	<Index on:changepage={changePage}/>
 {:else if currentPage === "projects"}
     <Projects />
+{:else if currentPage === "education"}
+    <Education />
 {:else if currentPage === "contact"}
     <Contact />
 {/if}

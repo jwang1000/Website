@@ -103,6 +103,11 @@
             Contact
         </button>
         <button 
+            class:active={activePage === "education"} 
+            on:click={() => dispatch('changepage', "education")}>
+            Education
+        </button>
+        <button 
             class:active={activePage === "projects"} 
             on:click={() => dispatch('changepage', "projects")}>
             Projects
@@ -114,6 +119,7 @@
         </button>
     </div>
     <div id="mobile">
+        <!--Hamburger menu icon-->
         <button on:click={() => showMobileMenu = true}>
             <div id="menuIcon"></div>
             <div id="menuIcon"></div>

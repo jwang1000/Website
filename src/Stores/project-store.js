@@ -32,7 +32,7 @@ const projects = readable([
             the Apache License 2.0."
         ],
         link: "https://github.com/TerrayTM/pytimize",
-        buttonText: "See GitHub repo...",
+        buttonText: "See GitHub repository...",
         id: 0
     },
     {
@@ -45,7 +45,7 @@ const projects = readable([
             with custom board sizes, pre-built difficulty settings, and persistent high scores."
         ],
         link: "https://github.com/jwang1000/Minesweeper",
-        buttonText: "See GitHub repo...",
+        buttonText: "See GitHub repository...",
         id: 1
     },
     {
@@ -60,7 +60,7 @@ const projects = readable([
             and an easily maintainable codebase."
         ],
         link: "https://github.com/jwang1000/Website",
-        buttonText: "See GitHub repo...",
+        buttonText: "See GitHub repository...",
         id: 2
     },
     {
@@ -89,7 +89,7 @@ const projects = readable([
             multiple levels."
         ],
         link: "https://github.com/jwang1000/Star-Fox-2D",
-        buttonText: "See GitHub repo...",
+        buttonText: "See GitHub repository...",
         id: 4
     }
 ]);

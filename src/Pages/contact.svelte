@@ -7,6 +7,12 @@
         padding: 2rem 4rem;
         background: #d2ddff;
     }
+
+    @media screen and (max-width: 500px) {
+        .contact {
+            padding: 2rem;
+        }
+    }
 </style>
 
 <svelte:head>

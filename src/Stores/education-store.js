@@ -65,9 +65,9 @@ const education = readable([
         term: 3,
         description: [
             "An introduction to object-oriented programming using <b>C++</b>.",
-            "Explored Resource Acquisition is Initialization, <b>design patterns</b> such as Iterator, Factory, \
-            Visitor, and Model-View Controller, and principles of OOP including encapsulation, abstraction, \
-            inheritance, and polymorphism."
+            "Explored <b>design patterns</b> such as iterator, factory, visitor, and model-view controller, \
+            resource acquisition is initialization through smart pointers, and principles of OOP including \
+            encapsulation, abstraction, inheritance, and polymorphism."
         ]
     },
     {

@@ -291,4 +291,5 @@
         <Experience name={exp.name} description={exp.description} src={exp.icon}/>
     {/each}
     <Button text="See Projects..." on:click={() => dispatch('changepage', "projects")}/>
+    <Button text="See Education..." on:click={() => dispatch('changepage', "education")}/>
 </section>

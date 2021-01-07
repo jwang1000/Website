@@ -9,7 +9,8 @@
         padding: 12px;
         font-size: 16px;
         font-family: Verdana, Trebuchet, Helvetica, Arial, sans-serif;
-        background-color: #59acff;
+        background-color: #587fff;
+        color: black;
         outline: none;
         border: none;
         border-radius: 8px;
@@ -22,7 +23,8 @@
     }
 
     a:hover {
-        background-color: #0080ff;
+        background-color: #2c48a8;
+        color: white;
     }
 </style>
 

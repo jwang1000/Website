@@ -8,8 +8,8 @@
         padding: 12px;
         font-size: 16px;
         font-family: Verdana, Trebuchet, Helvetica, Arial, sans-serif;
-        background-color: #59acff;
-        outline: none;
+        background-color: #587fff;
+        color: black;
         border: none;
         border-radius: 8px;
         text-decoration: none;
@@ -22,7 +22,8 @@
     }
 
     button:hover {
-        background-color: #0080ff;
+        background-color: #2c48a8;
+        color: white;
     }
 </style>
 

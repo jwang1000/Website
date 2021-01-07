@@ -6,6 +6,7 @@
     import JumpToTop from './Components/JumpToTop.svelte';
     import Contact from './Pages/contact.svelte';
     import Education from './Pages/education.svelte';
+    import VersionHistory from './Pages/versionHistory.svelte'
 
     let currentPage = "index";  // can be index, projects, contact
     
@@ -34,8 +35,10 @@
     <Education />
 {:else if currentPage === "contact"}
     <Contact />
+{:else if currentPage === "versionHistory"}
+    <VersionHistory />
 {/if}
 
 <JumpToTop on:changepage={changePage}/>
 
-<Footer />
+<Footer on:changepage={changePage}/>

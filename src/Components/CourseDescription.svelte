@@ -42,7 +42,7 @@
     }
 </style>
 
-<div in:fade id="description">
+<div in:fade>
     <p><b>{subject} {courseNumber}: {name}</b></p>
     <p>{getTermName(term)}</p>
 

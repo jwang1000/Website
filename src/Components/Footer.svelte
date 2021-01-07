@@ -1,3 +1,9 @@
+<script>
+    import { createEventDispatcher } from 'svelte';
+
+    const dispatch = createEventDispatcher();
+</script>
+
 <style>
     footer {
         margin-top: auto;
@@ -11,22 +17,42 @@
         font-size: 14px;
     }
 
-    #copyright {
+    .copyright {
         float: left;
     }
 
-    #version {
+    .version {
         float: right;
     }
 
+    .link, .builtWith {
+        display: inline-block;
+    }
+
+    .link {
+        cursor: pointer;
+    }
+
+    .link:hover {
+        text-decoration: underline;
+    }
+
     @media screen and (max-width: 768px) {
-        #version {
+        .version {
             float: left;
+        }
+
+        .copyright, .link {
+            padding-left: 0.3rem;
         }
     }
 </style>
 
 <footer>
-    <p id="copyright">Written by and &#169 Jonathan Wang 2019 - 2021.</p>
-    <p id="version">Version 2.3. Built with Svelte.</p>
+    <p class="copyright">Written by and &#169 Jonathan Wang 2019 - 2021.</p>
+
+    <div class="version">
+        <p class="link" on:click={() => dispatch('changepage', "versionHistory")}>Version 2.3.</p>
+        <p class="builtWith">Built with Svelte.</p>
+    </div>
 </footer>

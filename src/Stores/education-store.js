@@ -139,7 +139,7 @@ const education = readable([
             "Explored the fundamentals of nonlinear optimization, particularly various algorithms.",
             "Covered convexity, constrained and unconstrained problems, steepest descent, Newton's method, BFGS, \
             trust region methods, conjugate direction, linear and nonlinear least squares, gradient projection, quadratic \
-            penalty, and log-barrier. Also analyzed the rates convergence of these methods."
+            penalty, and log-barrier. Also analyzed the convergence rates of these methods."
         ]
     },
     {
@@ -148,7 +148,8 @@ const education = readable([
         courseNumber: 487,
         term: 7,
         description: [
-            // TODO
+            "A broad introduction to cryptography, including ciphers, hash functions, public-key encryption, digital \
+            signatures, key establishment, and key management. Also includes applications to security and commerce."
         ]
     },
     {
@@ -157,7 +158,9 @@ const education = readable([
         courseNumber: 341,
         term: 7,
         description: [
-            // TODO
+            "Exploring efficient algorithms and design techniques.",
+            "Includes divide and conquer, recurrences, greedy algorithms, dynamic programming, graph search and \
+            backtrack, and NP-completeness."
         ]
     },
     {
@@ -166,7 +169,8 @@ const education = readable([
         courseNumber: 349,
         term: 7,
         description: [
-            // TODO
+            "An introduction to user interfaces, including human-computer interaction, design/evaluation process, event \
+            abstraction, components, and architectures."
         ]
     },
     {
@@ -175,7 +179,9 @@ const education = readable([
         courseNumber: 350,
         term: 7,
         description: [
-            // TODO
+            "An introduction to the fundamentals of OS function, design, and implementation.", 
+            "Includes concurrency, synchronization, processes, threads, scheduling, memory management, file systems, \
+            device management, and security."
         ]
     },
 ]);

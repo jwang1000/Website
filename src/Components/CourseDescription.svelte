@@ -29,7 +29,7 @@
 
         // TODO update as needed
         if (termNum === 7) {
-            result += " - I'm taking this right now!";
+            result += " - I'm taking this right now! The description may be modified once I finish the course.";
         }
 
         return result;

@@ -1,11 +1,13 @@
 <script>
-    import { createEventDispatcher } from 'svelte';
     import { fly } from 'svelte/transition';
-
-    const dispatch = createEventDispatcher();
 
     const position = 200;  // how far down to display button
     let display = false;
+
+    // assuming that every page includes the PageIntro element
+    const jump = () => {
+        document.getElementsByClassName("intro")[0].scrollIntoView({ behavior: 'smooth' });
+    }
 
     window.onscroll = () => {
         if (document.body.scrollTop > position || document.documentElement.scrollTop > position) {
@@ -51,6 +53,6 @@
 
 {#if display}
     <section transition:fly={{x:0, y:100}} class="jumpToTop">
-        <button on:click={() => dispatch('changepage', "")}>&#8593</button>
+        <button on:click={() => jump()}>&#8593</button>
     </section>
 {/if}

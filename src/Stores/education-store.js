@@ -71,6 +71,16 @@ const education = readable([
         ]
     },
     {
+        name: "Probability",
+        subject: "STAT",
+        courseNumber: 230,
+        term: 3,
+        description: [
+            "An introduction to probability models including sample spaces, mutually exclusive and independent \
+            events, conditional probability, and Bayes' Theorem."
+        ]
+    },
+    {
         name: "Network Flow Theory",
         subject: "CO",
         courseNumber: 351,
@@ -158,8 +168,8 @@ const education = readable([
         courseNumber: 341,
         term: 7,
         description: [
-            "Exploring efficient algorithms and design techniques.",
-            "Includes divide and conquer, recurrences, greedy algorithms, dynamic programming, graph search and \
+            "A follow-up to CS 240; explored efficient algorithms and design techniques.",
+            "Included divide and conquer, recurrences, greedy algorithms, dynamic programming, graph search and \
             backtrack, and NP-completeness."
         ]
     },
@@ -180,8 +190,44 @@ const education = readable([
         term: 7,
         description: [
             "An introduction to the fundamentals of OS function, design, and implementation.", 
-            "Includes concurrency, synchronization, processes, threads, scheduling, memory management, file systems, \
+            "Included concurrency, synchronization, processes, threads, scheduling, memory management, file systems, \
             device management, and security."
+        ]
+    },
+    {
+        name: "Statistics",
+        subject: "STAT",
+        courseNumber: 231,
+        term: 9,
+        description: [
+            "A follow-up to STAT 230; includes assessing the sampling protocol and conclusions of empirical study, \
+            possible sources of error, causal relationships, connections between attributes of a population and \
+            the parameters in the named distributions covered in STAT 230, summarizing data, checking the fit of a \
+            statistical model, and interpretation of confidence intervals and p-values."
+        ]
+    },
+    {
+        name: "Intro to Game Theory",
+        subject: "CO",
+        courseNumber: 456,
+        term: 9,
+        description: [
+            "A broad introduction to game theory and its applications to the modeling of competition and cooperation in \
+            business, economics, and society. Includes two-person games in strategic form and Nash equilibria, extensive \
+            form games, coalition games, Bayesian games, mechanism design, and auctions."
+        ]
+    },
+    {
+        name: "Intro to Artificial Intelligence",
+        subject: "CS",
+        courseNumber: 486,
+        term: 9,
+        description: [
+            "Note: TBD if I will replace this course. If I end up switching courses, I will take this course at a later \
+            date.",
+            "Includes goals and methods of artificial intelligence, methods of general problem solving, knowledge \
+            representation and reasoning, planning, reasoning about uncertainty, machine learning, multi-agent systems, \
+            and natural language processing."
         ]
     },
 ]);

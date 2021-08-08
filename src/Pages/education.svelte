@@ -68,7 +68,7 @@
                 {name: "All", event: "all"},
                 {name: "CS", event: "CS"},
                 {name: "CO", event: "CO"},
-                {name: "Math", event: "MATH"}
+                {name: "Math", event: ["MATH", "STAT"]}
             ]}
             on:changetab={changeTab}>
         
@@ -86,6 +86,8 @@
             {#if currentSubject === "all"}
                 <CourseDescription education={edu}/>
             {:else if edu.subject === currentSubject}
+                <CourseDescription education={edu}/>
+            {:else if currentSubject.includes(edu.subject)}
                 <CourseDescription education={edu}/>
             {/if}
         {/each}

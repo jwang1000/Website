@@ -23,7 +23,7 @@ const experience = readable([
             "I created multiple new <b>Angular</b> components as part of a major user interface redesign, \
             and set up the framework for passing and receiving data from the older ASP.NET MVC section of \
             the web app. As a result, the Angular portion of the web app communicates smoothly with the rest \
-            of the app while more components are being created for the remaining functionality."
+            of the app while the team creates new components for the remaining functionality."
         ]
     },
     {

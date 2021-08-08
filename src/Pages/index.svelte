@@ -29,6 +29,10 @@
     })
     expUnsubscribe();
 
+    const jumpToExp = () => {
+        document.getElementById("experience").scrollIntoView({ behavior: 'smooth' });
+    }
+
     function changeTab(event) {
         if (event.detail !== currentTab) {
             currentTab = event.detail;
@@ -204,6 +208,7 @@
         <p>I am fascinated by the many technologies of software development, and I am continuously
             learning about new languages, algorithms, and techniques.
         </p>
+        <Button text="See Experience..." on:click={() => jumpToExp()} />
     </div>
 </section>
 
@@ -285,7 +290,7 @@
     </div>
 </section>
 
-<section class="experience">
+<section class="experience" id="experience">
     <h2>Work Experience</h2>
     {#each experience as exp}
         <Experience name={exp.name} description={exp.description} src={exp.icon}/>

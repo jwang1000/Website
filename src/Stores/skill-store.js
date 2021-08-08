@@ -153,7 +153,8 @@ const skills = readable([
         icon: "Icons/angular.png",
         level: 3,
         description: [
-            "TODO Thomson Reuters",
+            "At Thomson Reuters, I created multiple new Angular components as part of a major user interface redesign, and \
+            set up the framework for passing and receiving data from the older ASP.NET MVC section of the web app.",
             "Additionally, at MDA I used Angular to work on the frontend of the primary web application. I created reusable \
             components for the shared component library and refactored parts of the web app to follow best coding practices such \
             as avoiding redundancy and improving readability."
@@ -176,10 +177,11 @@ const skills = readable([
     {
         name: "ASP.NET MVC",
         tab: "tech",
-        icon: "Icons/xna.png",
+        icon: "Icons/aspnet mvc.png",
         level: 1,
         description: [
-            "TODO" 
+            "At Thomson Reuters, I fixed bugs in the frontend of one of the major web apps written using C# and ASP.NET MVC. \
+            I also created a service to pass data between the ASP.NET MVC and Angular sections of the frontend and the backend." 
         ],
         id: 22
     },
@@ -245,8 +247,8 @@ const skills = readable([
         icon: "Icons/vs code.png",
         level: 3,
         description: [
-            "I use Visual Studio Code for general software development, including my internships at Terradatum and MDA. I \
-            use VS Code for all of my Python and web app development."
+            "I use Visual Studio Code for general software development, including my internships at Terradatum, MDA, and \
+            Thomson Reuters. I also use VS Code for all of my Python and web app development."
         ],
         id: 40
     },
@@ -254,20 +256,22 @@ const skills = readable([
         name: "Visual Studio",
         tab: "software",
         icon: "Icons/visual studio.png",
-        level: 2,
+        level: 3,
         description: [
-            "Visual Studio is the default editor for Unity, and I do most of my C# programming using this IDE. I also \
-            use the GitHub plugin for Visual Studio to directly push and pull changes."
+            "I used Visual Studio at my internship at Thomson Reuters for most of the development on a major web app, \
+            including working on the C# backend and the ASP.NET MVC frontend.",
+            "Additionally, Visual Studio is the default editor for Unity, and I do most of my C# programming using this IDE. \
+            I also use the GitHub plugin for Visual Studio to directly push and pull changes."
         ],
         id: 41
     },
     {
         name: "MS SQL Server",
         tab: "software",
-        icon: "Icons/visual studio.png",
+        icon: "Icons/ms sql server.png",
         level: 1,
         description: [
-            "TODO"
+            "At Thomson Reuters, I used Microsoft SQL Server to debug and test the behaviour of backend logic."
         ],
         id: 42
     },

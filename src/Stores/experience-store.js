@@ -12,6 +12,21 @@ import { readable } from 'svelte/store';
  */
 const experience = readable([
     {
+        name: "Thomson Reuters",
+        icon: "Icons/thomson reuters.png",
+        description: [
+            "As a software developer intern at Thomson Reuters, I worked as a full stack developer by fixing \
+            bugs in both the frontend and backend of a major web application and aiding in the redesign \
+            of the web app's landing page and main features.",
+            "In the backend, I fixed and simplified the logic in many different locations and contexts, \
+            gaining experience in <b>C#</b>, <b>ASP.NET MVC</b>, and <b>SQL</b>.",
+            "I created multiple new <b>Angular</b> components as part of a major user interface redesign, \
+            and set up the framework for passing and receiving data from the older ASP.NET MVC section of \
+            the web app. As a result, the Angular portion of the web app communicates smoothly with the rest \
+            of the app while more components are being created for the remaining functionality."
+        ]
+    },
+    {
         name: "MDA",
         icon: "Icons/MDA.png",
         description: [

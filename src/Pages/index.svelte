@@ -219,7 +219,7 @@
                 <h3>Basic</h3>
                 <img src="Icons/star.png" alt=""/>
             </div>
-            <p>A minimal working knowledge of the subject; enough to not need constant guidance when performing tasks.</p>
+            <p>A working knowledge of the subject; constant guidance is not needed when performing tasks.</p>
 
             <div class="skillCriteriaTitle">
                 <h3>Proficient</h3>
@@ -262,11 +262,11 @@
             ]}
             on:changetab={changeTab}>
 
-        {#each skills as skill (skill.id)}
-            {#if skill.tab === currentTab}
-                <ButtonIcon caption={skill.name} src={skill.icon} active={currentSkill === skill.name} on:click={changeDescription}/>
-            {/if}
-        {/each}
+            {#each skills as skill (skill.id)}
+                {#if skill.tab === currentTab}
+                    <ButtonIcon caption={skill.name} src={skill.icon} active={currentSkill === skill.name} on:click={changeDescription}/>
+                {/if}
+            {/each}
         </Tab>
     </div>
     <div id="info">

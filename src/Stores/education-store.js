@@ -180,7 +180,9 @@ const education = readable([
         term: 7,
         description: [
             "An introduction to user interfaces, including human-computer interaction, design/evaluation process, event \
-            abstraction, components, and architectures."
+            abstraction, components, and architectures. Emphasized good code design, effective interfaces, and different \
+            forms of input.",
+            "Course projects were written in <b>Java</b> using JavaFX and the Android API."
         ]
     },
     {

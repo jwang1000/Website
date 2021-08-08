@@ -22,6 +22,7 @@
         outline: none;
         border-radius: 8px;
         transition: 0.3s;
+        padding: 5px;
     }
 
     button:hover {
@@ -36,6 +37,7 @@
         width: 75px;
         height: 75px;
         border: 0;
+        vertical-align: middle;
     }
 
     p {

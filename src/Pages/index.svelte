@@ -195,7 +195,7 @@
 
 <section class="about">
     <div class="aboutimg">
-        <img src="Icons/logo1.png" alt="">
+        <img src="Icons/logo.png" alt="">
     </div>
 
     <div class="aboutimg">

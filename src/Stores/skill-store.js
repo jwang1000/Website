@@ -37,12 +37,12 @@ const skills = readable([
         icon: "Icons/java.png",
         level: 3,
         description: [
-            "In Java, I created a fully-functioning clone of Minesweeper, including custom difficulty and board sizes, and high scores. \
-            I used the <b>Java Swing</b> library to implement the graphics, and the scanner to implement file I/O. While working on this \
-            project, I used <b>object-oriented design principles</b> to keep the codebase easily modifiable and to take advantage of \
-            pre-existing code.",
             "At MDA, I used Java to work on the backend of the main web app. I fixed various bugs and refactored parts of the codebase \
-            to remove redundancy. I worked with the Lombok library and wrote and maintained <b>unit tests</b> using Mockito."
+            to remove redundancy. I worked with the Lombok library and wrote and maintained <b>unit tests</b> using Mockito.",
+            "In CS 349: User Interfaces, I used Java for multiple course projects using either <b>JavaFX</b> or the <b>Android</b> \
+            API. In every project, I used <b>object-oriented design principles</b> to ensure the codebases were easily extendable.",
+            "I also created a fully-functioning clone of Minesweeper, including custom difficulty and board sizes, and high scores. \
+            I used the <b>Java Swing</b> library to implement the graphics."
         ],
         id: 1
     },
@@ -266,6 +266,28 @@ const skills = readable([
         id: 41
     },
     {
+        name: "IntelliJ IDEA",
+        tab: "software",
+        icon: "Icons/intellij.png",
+        level: 2,
+        description: [
+            "I used IntelliJ for working on projects for CS 349: User Interfaces, including Game of Life and Drawing Bezier \
+            Curves, among others. See the Projects page for more details." 
+        ],
+        id: 42
+    },
+    {
+        name: "Android Studio",
+        tab: "software",
+        icon: "Icons/android studio.png",
+        level: 2,
+        description: [
+            "I used Android Studio for working on an Android app for CS 349: User Interfaces, namely Gesture Recognition. \
+            See the Projects page for more details." 
+        ],
+        id: 43
+    },
+    {
         name: "MS SQL Server",
         tab: "software",
         icon: "Icons/ms sql server.png",
@@ -273,18 +295,7 @@ const skills = readable([
         description: [
             "At Thomson Reuters, I used Microsoft SQL Server to debug and test the behaviour of backend logic."
         ],
-        id: 42
-    },
-    {
-        name: "Unity",
-        tab: "software",
-        icon: "Icons/unity.png",
-        level: 2,
-        description: [
-            "I use Unity 3D for the development of various games. I primarily work with sprites for the graphics, and \
-            I have used plugins and addons such as Introloop." 
-        ],
-        id: 43
+        id: 44
     },
     {
         name: "GitHub",
@@ -295,7 +306,18 @@ const skills = readable([
             "I use GitHub for both solo and group projects as both backup and version control. I primarily use GitHub \
             through the command line and GitHub Desktop." 
         ],
-        id: 44
+        id: 45
+    },
+    {
+        name: "Unity",
+        tab: "software",
+        icon: "Icons/unity.png",
+        level: 2,
+        description: [
+            "I use Unity 3D for the development of various games. I primarily work with sprites for the graphics, and \
+            I have used plugins and addons such as Introloop." 
+        ],
+        id: 46
     },
     {
         name: "NetBeans",
@@ -305,7 +327,7 @@ const skills = readable([
         description: [
             "I used NetBeans as the IDE for my Java projects, including the Minesweeper clone I created." 
         ],
-        id: 45
+        id: 47
     },
     {
         name: "Vim",
@@ -316,7 +338,7 @@ const skills = readable([
             "I learned to use Vi and Vim through CS 246 at the University of Waterloo. I programmed my C++ assignments and \
             projects exclusively in Vim for the entire term, and used the g++ compiler to create executables." 
         ],
-        id: 46
+        id: 48
     },
     {
         name: "FL Studio",
@@ -327,7 +349,7 @@ const skills = readable([
             "As a longtime musician, I use my experience in music to create soundtracks and songs. I have composed \
             several soundtracks for use in video games, and will continue to do so for upcoming projects." 
         ],
-        id: 47
+        id: 49
     },
     {
         name: "Microsoft Office",
@@ -338,7 +360,7 @@ const skills = readable([
             "I use various programs in the Microsoft Office Suite, such as Word and Excel, on a near-daily basis \
             for schoolwork and record keeping, as I have for more than seven years." 
         ],
-        id: 48
+        id: 50
     },
     {
         name: "Paint.NET",
@@ -348,7 +370,7 @@ const skills = readable([
         description: [
             "I use Paint.NET as a general image editor, as well as to create sprites for various games." 
         ],
-        id: 49
+        id: 51
     },
 
     // GENERAL

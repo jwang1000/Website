@@ -36,32 +36,67 @@ const projects = readable([
         id: 0
     },
     {
-        name: "Minesweeper Clone",
-        primaryImage: "Icons/minesweeper.png",
-        images: ["Icons/minesweeper1.PNG", "Icons/minesweeper2.PNG"],
-        description: [
-            "<b>Language: Java<br>Technologies: Java Swing</b>",
-            "A clone of the game Minesweeper with the original early Windows graphics. Complete \
-            with custom board sizes, pre-built difficulty settings, and persistent high scores."
-        ],
-        link: "https://github.com/jwang1000/Minesweeper",
-        buttonText: "See GitHub repository...",
-        id: 1
-    },
-    {
         name: "jwang1000 Website",
-        primaryImage: "Icons/logo1.png",
+        primaryImage: "Icons/logo.png",
         images: [""],
         description: [
             "<b>Languages: HTML, CSS, JavaScript<br>Technologies: Svelte</b>",
             "My personal responsive website, built from scratch without the use of external libraries or \
             stylesheets. You're on it right now!",
-            "I wrote the second version of the website using the Svelte compiler, which enabled additional enhancements \
-            and an easily maintainable codebase."
+            "I wrote the second version of the website using the Svelte compiler, which enabled additional \
+            enhancements and an easily maintainable codebase."
         ],
         link: "https://github.com/jwang1000/Website",
         buttonText: "See GitHub repository...",
+        id: 1
+    },
+    {
+        name: "Gesture Recognition",
+        primaryImage: "Icons/recognition.png",
+        images: ["Icons/recognition1.png", "Icons/recognition2.png", "Icons/recognition3.png"],
+        description: [
+            "<b>Language: Java<br>Technologies: Android API</b>",
+            "A gesture recognition app for Android. Saves named gestures to compare against, then finds the \
+            closest three matches to any drawn gesture. The saved gestures are kept in storage so they can be \
+            used even after closing and reopening the app, and they can be replaced or deleted.",
+            "The GitHub repository is private, due to this project being a course assignment. Access to the \
+            repo is available on request."
+        ],
+        link: "",
+        buttonText: "",
         id: 2
+    },
+    {
+        name: "Game of Life",
+        primaryImage: "Icons/life.png",
+        images: ["Icons/life1.png"],
+        description: [
+            "<b>Language: Java<br>Technologies: JavaFX</b>",
+            "A modified version of Conway's Game of Life. The board is a limited size, but additional \
+            enhancements include manual mode and quality of life improvements.",
+            "The GitHub repository is private, due to this project being a course assignment. Access to the \
+            repo is available on request."
+        ],
+        link: "",
+        buttonText: "",
+        id: 3
+    },
+    {
+        name: "Drawing Bezier Curves",
+        primaryImage: "Icons/bezier.png",
+        images: ["Icons/bezier1.png"],
+        description: [
+            "<b>Language: Java<br>Technologies: JavaFX</b>",
+            "A program to draw <a href='https://en.wikipedia.org/wiki/B%C3%A9zier_curve'>Bezier Curves</a>. \
+            Includes different colours, thicknesses, and styles of lines; erasing, cutting, copying, and \
+            pasting lines; adjusting points and making sharp corners; and saving and loading the entire \
+            canvas.",
+            "The GitHub repository is private, due to this project being a course assignment. Access to the \
+            repo is available on request."
+        ],
+        link: "",
+        buttonText: "",
+        id: 4
     },
     {
         name: "Biquadris",
@@ -77,7 +112,20 @@ const projects = readable([
         ],
         link: "",
         buttonText: "",
-        id: 3
+        id: 5
+    },
+    {
+        name: "Minesweeper Clone",
+        primaryImage: "Icons/minesweeper.png",
+        images: ["Icons/minesweeper1.PNG", "Icons/minesweeper2.PNG"],
+        description: [
+            "<b>Language: Java<br>Technologies: Java Swing</b>",
+            "A clone of the game Minesweeper with the original early Windows graphics. Complete \
+            with custom board sizes, pre-built difficulty settings, and persistent high scores."
+        ],
+        link: "https://github.com/jwang1000/Minesweeper",
+        buttonText: "See GitHub repository...",
+        id: 6
     },
     {
         name: "Star Fox 2D",
@@ -90,7 +138,7 @@ const projects = readable([
         ],
         link: "https://github.com/jwang1000/Star-Fox-2D",
         buttonText: "See GitHub repository...",
-        id: 4
+        id: 7
     }
 ]);
 

@@ -95,7 +95,7 @@
     </div>
 
     <p>
-        Note: this list contains only relevant courses; I have not listed general non-CS courses (Calculus, Linear Algebra,
-        Statistics) nor many electives I've taken (Physics, English, Music).
+        Note: this list contains only relevant courses; I have not listed general non-CS courses (Calculus, Linear Algebra) 
+        nor many electives I've taken (Physics, English, Music, Spanish).
     </p>
 </section>

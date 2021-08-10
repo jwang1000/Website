@@ -9,11 +9,6 @@
 </script>
 
 <style>
-    noscript {
-        padding: 1rem 2rem;
-        background: #00ff15;
-    }
-
     header {
         height: auto;
         background-color: #000b30;
@@ -93,7 +88,7 @@
 <header>
     <div id="home">
         <button on:click={() => dispatch('changepage', "index")}>
-            <img src="Icons/logo1.png" alt="">
+            <img src="Icons/logo.png" alt="">
         </button>
     </div>
     <div id="desktop">
@@ -130,9 +125,3 @@
         {/if}
     </div>
 </header>
-
-<noscript>
-    <h2><br>If you're seeing this, you have JavaScript disabled. <br>
-        Don't have JavaScript disabled. Browsing the internet sucks with JavaScript disabled.
-    </h2>
-</noscript>

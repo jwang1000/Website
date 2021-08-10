@@ -18,6 +18,14 @@
     function confirmModal() {
         dispatch('confirm');
     }
+
+    function keyCapture(e) {
+        if (e.code === 'Escape') {
+            closeModal();
+        }
+    }
+
+    document.addEventListener('keydown', keyCapture);
 </script>
 
 <style>

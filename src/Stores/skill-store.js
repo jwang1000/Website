@@ -25,9 +25,9 @@ const skills = readable([
         icon: "Icons/python.png",
         level: 3,
         description: [
-            "Using <b>Python 2</b> in the Codeskulptor online IDE, I built a 2D space shooter game based on the video game Star Fox.", 
             "I am currently using <b>Python 3</b> to work on <b>Pytimize</b>, a solver for optimization problems, including linear, \
-            integer, and non-linear programming problems." 
+            integer, and non-linear programming problems.",
+            "Using <b>Python 2</b> in the Codeskulptor online IDE, I built a 2D space shooter game based on the video game Star Fox."
         ],
         id: 0
     },
@@ -37,12 +37,12 @@ const skills = readable([
         icon: "Icons/java.png",
         level: 3,
         description: [
-            "In Java, I created a fully-functioning clone of Minesweeper, including custom difficulty and board sizes, and high scores. \
-            I used the <b>Java Swing</b> library to implement the graphics, and the scanner to implement file I/O. While working on this \
-            project, I used <b>object-oriented design principles</b> to keep the codebase easily modifiable and to take advantage of \
-            pre-existing code.",
             "At MDA, I used Java to work on the backend of the main web app. I fixed various bugs and refactored parts of the codebase \
-            to remove redundancy. I worked with the Lombok library and wrote and maintained <b>unit tests</b> using Mockito."
+            to remove redundancy. I worked with the Lombok library and wrote and maintained <b>unit tests</b> using Mockito.",
+            "In CS 349: User Interfaces, I used Java for multiple course projects using either <b>JavaFX</b> or the <b>Android</b> \
+            API. In every project, I used <b>object-oriented design principles</b> to ensure the codebases were easily extendable.",
+            "I also created a fully-functioning clone of Minesweeper, including custom difficulty and board sizes, and high scores. \
+            I used the <b>Java Swing</b> library to implement the graphics."
         ],
         id: 1
     },
@@ -66,7 +66,9 @@ const skills = readable([
         icon: "Icons/csharp.png",
         level: 3,
         description: [
-            "I transitioned to C# from Java and I am learning to develop games in <b>Unity</b> and Microsoft's XNA Framework."
+            "At Thomson Reuters, I used C# to work on both the backend and frontend of one of the major web apps. I fixed bugs in \
+            the frontend with <b>ASP.NET MVC</b>, as well as issues in the logic of various classes.",
+            "I am also learning to develop games in <b>Unity</b> and Microsoft's XNA Framework."
         ],
         id: 2
     },
@@ -87,10 +89,10 @@ const skills = readable([
         icon: "Icons/javascript.png",
         level: 3,
         description: [
+            "At Thomson Reuters and MDA, I used TypeScript and <b>Angular</b> to work on the frontend of multiple web apps, \
+            including creating new reusable components and fixing bugs.",
             "I used JavaScript in my second term as an intern at Terradatum. Using <b>Svelte</b>, I wrote TD-Admin from scratch, \
             a single-page web administration application.",
-            "At MDA, I used TypeScript and <b>Angular</b> to work on the frontend of the main web app, including creating new \
-            reusable components and fixing bugs.",
             "I also used JS and Svelte to build the current version of jwang1000.com."
         ],
         id: 5
@@ -101,10 +103,10 @@ const skills = readable([
         icon: "Icons/typescript.png",
         level: 3,
         description: [
-            "I used TypeScript with <b>Angular</b> to develop the frontend of the main web app at MDA. I created reusable \
-            components for the shared component library and improved parts of the documentation. I also helped improve the \
-            efficiency of the app through refactoring redundant code and changing the code to use new components. I wrote \
-            and maintained <b>unit tests</b> using Mocha."
+            "I used TypeScript with <b>Angular</b> to develop the frontend of web applications at MDA and Thomson Reuters. \
+            I have created reusable components, improved efficiency through refactoring redundant code, and wrote services to allow \
+            for data to be passed between the backend and differing parts of the frontend.",
+            "At MDA, I wrote and maintained <b>unit tests</b> using Mocha."
         ],
         id: 6
     },
@@ -114,8 +116,8 @@ const skills = readable([
         icon: "Icons/html5.png",
         level: 3,
         description: [
-            "I used HTML in my internships with Terradatum and MDA, as well as my personal website. I used online resources such \
-            as W3Schools to teach myself, and wrote the original version of jwang1000.com as practice." 
+            "I used HTML in my internships with Terradatum, MDA, and Thomson Reuters, as well as my personal website. I used \
+            online resources such as W3Schools to teach myself, and wrote the original version of jwang1000.com as practice." 
         ],
         id: 7
     },
@@ -123,12 +125,25 @@ const skills = readable([
         name: "CSS",
         tab: "lang",
         icon: "Icons/css3.png",
-        level: 2,
+        level: 3,
         description: [
-            "I used CSS to build my website and at my internships at Terradatum and MDA. Similarly to HTML, I used online resources to \
-            learn the required knowledge. I did not use any external CSS libraries to write this site." 
+            "I used CSS to build my website and at my internships at Terradatum, MDA, and Thomson Reuters. Through my experience, \
+            I fixed many scenarios with compatibility issues between browsers and resolutions, and successfully delivered a wide \
+            variety of layouts requested by clients and designers.",
+            "Similarly to HTML, I used online resources to learn the required knowledge. I did not use any external CSS \
+            libraries to write this site." 
         ],
         id: 8
+    },
+    {
+        name: "SQL",
+        tab: "lang",
+        icon: "Icons/sql.png",
+        level: 1,
+        description: [
+            "At Thomson Reuters, I used SQL in <b>Microsoft SQL Server</b> to debug and test the behaviour of backend logic."
+        ],
+        id: 9
     },
 
     // TECHNOLOGIES
@@ -138,7 +153,9 @@ const skills = readable([
         icon: "Icons/angular.png",
         level: 3,
         description: [
-            "I used Angular to work on the frontend of the primary web application being developed by MDA. I created reusable \
+            "At Thomson Reuters, I created multiple new Angular components as part of a major user interface redesign, and \
+            set up the framework for passing and receiving data from the older ASP.NET MVC section of the web app.",
+            "Additionally, at MDA I used Angular to work on the frontend of the primary web application. I created reusable \
             components for the shared component library and refactored parts of the web app to follow best coding practices such \
             as avoiding redundancy and improving readability."
         ],
@@ -158,6 +175,17 @@ const skills = readable([
         id: 21
     },
     {
+        name: "ASP.NET MVC",
+        tab: "tech",
+        icon: "Icons/aspnet mvc.png",
+        level: 1,
+        description: [
+            "At Thomson Reuters, I fixed bugs in the frontend of one of the major web apps written using C# and ASP.NET MVC. \
+            I also created a service to pass data between the ASP.NET MVC and Angular sections of the frontend and the backend." 
+        ],
+        id: 22
+    },
+    {
         name: "Docker",
         tab: "tech",
         icon: "Icons/docker.png",
@@ -167,7 +195,7 @@ const skills = readable([
             and coordinated multiple containers using <b>Docker Compose</b>. I used Docker again in my second term at \
             Terradatum to containerize TD-Admin for deployment." 
         ],
-        id: 22
+        id: 23
     },
     {
         name: "NumPy",
@@ -177,7 +205,7 @@ const skills = readable([
         description: [
             "I am currently using NumPy in Python 3 to work on <b>Pytimize</b>, a solver for various optimization problems." 
         ],
-        id: 23
+        id: 24
     },
     {
         name: "MatPlotLib",
@@ -188,7 +216,7 @@ const skills = readable([
             "I used MatPlotLib in Python 3 to create a part of <b>Pytimize</b>; I wrote a method to graph feasible regions \
             of linear programs." 
         ],
-        id: 24
+        id: 25
     },
     {
         name: "Postman",
@@ -199,7 +227,7 @@ const skills = readable([
             "I used Postman to create collections to automate testing of APIs and bash scripts for my first internship \
             at Terradatum. I also exported these collections for use in <b>Newman</b>, the command-line based version of Postman." 
         ],
-        id: 25
+        id: 26
     },
     {
         name: "Microsoft XNA",
@@ -209,7 +237,7 @@ const skills = readable([
         description: [
             "I am working on in-progress games in C# that use the Microsoft XNA Framework." 
         ],
-        id: 26
+        id: 27
     },
 
     // SOFTWARE
@@ -219,8 +247,8 @@ const skills = readable([
         icon: "Icons/vs code.png",
         level: 3,
         description: [
-            "I use Visual Studio Code for general software development, including my internships at Terradatum and MDA. I \
-            use VS Code for all of my Python and web app development."
+            "I use Visual Studio Code for general software development, including my internships at Terradatum, MDA, and \
+            Thomson Reuters. I also use VS Code for all of my Python and web app development."
         ],
         id: 40
     },
@@ -228,23 +256,46 @@ const skills = readable([
         name: "Visual Studio",
         tab: "software",
         icon: "Icons/visual studio.png",
-        level: 2,
+        level: 3,
         description: [
-            "Visual Studio is the default editor for Unity, and I do most of my C# programming using this IDE. I also \
-            use the GitHub plugin for Visual Studio to directly push and pull changes."
+            "I used Visual Studio at my internship at Thomson Reuters for most of the development on a major web app, \
+            including working on the C# backend and the ASP.NET MVC frontend.",
+            "Additionally, Visual Studio is the default editor for Unity, and I do most of my C# programming using this IDE. \
+            I also use the GitHub plugin for Visual Studio to directly push and pull changes."
         ],
         id: 41
     },
     {
-        name: "Unity",
+        name: "IntelliJ IDEA",
         tab: "software",
-        icon: "Icons/unity.png",
+        icon: "Icons/intellij.png",
         level: 2,
         description: [
-            "I use Unity 3D for the development of various games. I primarily work with sprites for the graphics, and \
-            I have used plugins and addons such as Introloop." 
+            "I used IntelliJ for working on projects for CS 349: User Interfaces, including Game of Life and Drawing Bezier \
+            Curves, among others. See the Projects page for more details." 
         ],
         id: 42
+    },
+    {
+        name: "Android Studio",
+        tab: "software",
+        icon: "Icons/android studio.png",
+        level: 2,
+        description: [
+            "I used Android Studio for working on an Android app for CS 349: User Interfaces, namely Gesture Recognition. \
+            See the Projects page for more details." 
+        ],
+        id: 43
+    },
+    {
+        name: "MS SQL Server",
+        tab: "software",
+        icon: "Icons/ms sql server.png",
+        level: 1,
+        description: [
+            "At Thomson Reuters, I used Microsoft SQL Server to debug and test the behaviour of backend logic."
+        ],
+        id: 44
     },
     {
         name: "GitHub",
@@ -255,7 +306,18 @@ const skills = readable([
             "I use GitHub for both solo and group projects as both backup and version control. I primarily use GitHub \
             through the command line and GitHub Desktop." 
         ],
-        id: 43
+        id: 45
+    },
+    {
+        name: "Unity",
+        tab: "software",
+        icon: "Icons/unity.png",
+        level: 2,
+        description: [
+            "I use Unity 3D for the development of various games. I primarily work with sprites for the graphics, and \
+            I have used plugins and addons such as Introloop." 
+        ],
+        id: 46
     },
     {
         name: "NetBeans",
@@ -265,7 +327,7 @@ const skills = readable([
         description: [
             "I used NetBeans as the IDE for my Java projects, including the Minesweeper clone I created." 
         ],
-        id: 44
+        id: 47
     },
     {
         name: "Vim",
@@ -276,7 +338,7 @@ const skills = readable([
             "I learned to use Vi and Vim through CS 246 at the University of Waterloo. I programmed my C++ assignments and \
             projects exclusively in Vim for the entire term, and used the g++ compiler to create executables." 
         ],
-        id: 45
+        id: 48
     },
     {
         name: "FL Studio",
@@ -287,7 +349,7 @@ const skills = readable([
             "As a longtime musician, I use my experience in music to create soundtracks and songs. I have composed \
             several soundtracks for use in video games, and will continue to do so for upcoming projects." 
         ],
-        id: 46
+        id: 49
     },
     {
         name: "Microsoft Office",
@@ -298,7 +360,7 @@ const skills = readable([
             "I use various programs in the Microsoft Office Suite, such as Word and Excel, on a near-daily basis \
             for schoolwork and record keeping, as I have for more than seven years." 
         ],
-        id: 47
+        id: 50
     },
     {
         name: "Paint.NET",
@@ -308,8 +370,10 @@ const skills = readable([
         description: [
             "I use Paint.NET as a general image editor, as well as to create sprites for various games." 
         ],
-        id: 48
+        id: 51
     },
+
+    // GENERAL
     {
         name: "Piano",
         tab: "general",

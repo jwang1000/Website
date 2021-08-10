@@ -29,6 +29,10 @@
     })
     expUnsubscribe();
 
+    const jumpToExp = () => {
+        document.getElementById("experience").scrollIntoView({ behavior: 'smooth' });
+    }
+
     function changeTab(event) {
         if (event.detail !== currentTab) {
             currentTab = event.detail;
@@ -191,7 +195,7 @@
 
 <section class="about">
     <div class="aboutimg">
-        <img src="Icons/logo1.png" alt="">
+        <img src="Icons/logo.png" alt="">
     </div>
 
     <div class="aboutimg">
@@ -204,6 +208,7 @@
         <p>I am fascinated by the many technologies of software development, and I am continuously
             learning about new languages, algorithms, and techniques.
         </p>
+        <Button text="See Experience..." on:click={() => jumpToExp()} />
     </div>
 </section>
 
@@ -219,7 +224,7 @@
                 <h3>Basic</h3>
                 <img src="Icons/star.png" alt=""/>
             </div>
-            <p>A minimal working knowledge of the subject; enough to not need constant guidance when performing tasks.</p>
+            <p>A working knowledge of the subject; constant guidance is not needed when performing tasks.</p>
 
             <div class="skillCriteriaTitle">
                 <h3>Proficient</h3>
@@ -262,11 +267,11 @@
             ]}
             on:changetab={changeTab}>
 
-        {#each skills as skill (skill.id)}
-            {#if skill.tab === currentTab}
-                <ButtonIcon caption={skill.name} src={skill.icon} active={currentSkill === skill.name} on:click={changeDescription}/>
-            {/if}
-        {/each}
+            {#each skills as skill (skill.id)}
+                {#if skill.tab === currentTab}
+                    <ButtonIcon caption={skill.name} src={skill.icon} active={currentSkill === skill.name} on:click={changeDescription}/>
+                {/if}
+            {/each}
         </Tab>
     </div>
     <div id="info">
@@ -285,7 +290,7 @@
     </div>
 </section>
 
-<section class="experience">
+<section class="experience" id="experience">
     <h2>Work Experience</h2>
     {#each experience as exp}
         <Experience name={exp.name} description={exp.description} src={exp.icon}/>

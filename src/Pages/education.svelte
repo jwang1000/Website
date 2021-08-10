@@ -68,7 +68,7 @@
                 {name: "All", event: "all"},
                 {name: "CS", event: "CS"},
                 {name: "CO", event: "CO"},
-                {name: "Math", event: "MATH"}
+                {name: "Math", event: ["MATH", "STAT"]}
             ]}
             on:changetab={changeTab}>
         
@@ -87,13 +87,15 @@
                 <CourseDescription education={edu}/>
             {:else if edu.subject === currentSubject}
                 <CourseDescription education={edu}/>
+            {:else if currentSubject.includes(edu.subject)}
+                <CourseDescription education={edu}/>
             {/if}
         {/each}
         </Tab>
     </div>
 
     <p>
-        Note: this list contains only relevant courses; I have not listed general non-CS courses (Calculus, Linear Algebra,
-        Statistics) nor many electives I've taken (Physics, English, Music).
+        Note: this list contains only relevant courses; I have not listed general non-CS courses (Calculus, Linear Algebra) 
+        nor many electives I've taken (Physics, English, Music, Spanish).
     </p>
 </section>

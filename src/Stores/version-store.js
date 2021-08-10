@@ -13,6 +13,22 @@ import { readable } from "svelte/store";
  */
 const versions = readable([
     {
+        name: "2.4",
+        additions: [
+            "Added descriptions of work term at Thomson Reuters to work experience and skills",
+            "Added descriptions of new courses",
+            "Added descriptions of new skills",
+            "Jumping to a section or the top of the page is now smooth"
+        ],
+        changes: [
+            "Modified some skill descriptions",
+            "Reworded basic skill level explanation",
+            "Compressed most images to save space",
+            "Moved no JS warning to a place that will actually display it if JS is disabled"
+        ],
+        removals: []
+    },
+    {
         name: "2.3",
         additions: [
             "Added Education page, along with descriptions of all relevant courses",

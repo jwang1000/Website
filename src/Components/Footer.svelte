@@ -52,7 +52,7 @@
     <p class="copyright">Written by and &#169 Jonathan Wang 2019 - 2021.</p>
 
     <div class="version">
-        <p class="link" on:click={() => dispatch('changepage', "versionHistory")}>Version 2.3.</p>
+        <p class="link" on:click={() => dispatch('changepage', "versionHistory")}>Version 2.4.</p>
         <p class="builtWith">Built with Svelte.</p>
     </div>
 </footer>

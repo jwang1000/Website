@@ -28,7 +28,7 @@
         result += 2018 + Math.ceil(termNum / 3);
 
         // TODO update as needed
-        if (termNum === 7) {
+        if (termNum === 9) {
             result += " - I'm taking this right now! The description may be modified once I finish the course.";
         }
 

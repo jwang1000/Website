@@ -1,6 +1,7 @@
 <script>
     import { fade } from 'svelte/transition';
     export let education;  // object - for format, see education-store.js
+    export let currentTermNum;
 
     const name = education.name;
     const subject = education.subject;
@@ -27,8 +28,7 @@
         }
         result += 2018 + Math.ceil(termNum / 3);
 
-        // TODO update as needed
-        if (termNum === 9) {
+        if (termNum === currentTermNum) {
             result += " - I'm taking this right now! The description may be modified once I finish the course.";
         }
 

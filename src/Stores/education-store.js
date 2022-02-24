@@ -219,19 +219,6 @@ const education = readable([
             form games, coalition games, Bayesian games, mechanism design, and auctions."
         ]
     },
-    {
-        name: "Intro to Artificial Intelligence",
-        subject: "CS",
-        courseNumber: 486,
-        term: 9,
-        description: [
-            "Note: TBD if I will replace this course. If I end up switching courses, I will take this course at a later \
-            date.",
-            "Includes goals and methods of artificial intelligence, methods of general problem solving, knowledge \
-            representation and reasoning, planning, reasoning about uncertainty, machine learning, multi-agent systems, \
-            and natural language processing."
-        ]
-    },
 ]);
 
 export default education;

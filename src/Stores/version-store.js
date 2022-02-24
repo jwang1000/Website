@@ -13,6 +13,27 @@ import { readable } from "svelte/store";
  */
 const versions = readable([
     {
+        name: "2.5",
+        additions: [
+            "Added descriptions of ongoing/future work terms at Yugabyte and Akuna Capital to work experience and skills",
+            "Added descriptions of new skills",
+            "Added barrier to Contact page to filter out excessive emails",
+            "Added definitions of UWaterloo terms to Education page"
+        ],
+        changes: [
+            "Modified some skill descriptions",
+            "Changed Microsoft XNA skill to Monogame to accurately reflect the modern framework being used",
+            "Updated email on Contact page",
+            "Updated code for Education page to automatically calculate the current term",
+            "Tweaked descriptions on Education page",
+            "Updated noscript to be more descriptive",
+            "Fixed bug with title for Math courses on Education page"
+        ],
+        removals: [
+            "Removed courses swapped out during the Fall 2021 term"
+        ]
+    },
+    {
         name: "2.4",
         additions: [
             "Added descriptions of work term at Thomson Reuters to work experience and skills",

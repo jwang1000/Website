@@ -12,6 +12,23 @@ import { readable } from 'svelte/store';
  */
 const experience = readable([
     {
+        name: "Akuna Capital",
+        icon: "Icons/akuna capital.png",
+        description: [
+            "I have accepted an offer for an internship at Akuna Capital for the summer of 2022! I will be using \
+            C++ on the Development team in Chicago."
+        ]
+    },
+    {
+        name: "Yugabyte",
+        icon: "Icons/yugabyte.png",
+        description: [
+            "I am currently working as a software developer intern on the Cloud Infra and Full Stack team at \
+            Yugabyte. I am working as a full stack developer using <b>React</b> and <b>Java</b>, and am learning \
+            <b>Go</b> to create a custom <b>Terraform</b> provider for Yugabyte Cloud."
+        ]
+    },
+    {
         name: "Thomson Reuters",
         icon: "Icons/thomson reuters.png",
         description: [

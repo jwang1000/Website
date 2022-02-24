@@ -204,7 +204,7 @@
 
     <div class="abouttext">
         <h2>About Me</h2>
-        <p>I love writing code, playing music, and learning about math and physics!</p>
+        <p>I love writing code, playing music, building computers, and learning about math and physics!</p>
         <p>I am fascinated by the many technologies of software development, and I am continuously
             learning about new languages, algorithms, and techniques.
         </p>

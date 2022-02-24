@@ -22,6 +22,10 @@
     })
     eduUnsubscribe();  // store is readable, won't change
 
+    // calculate current term number
+    let currentDate = new Date();
+    const currentTermNum = (currentDate.getFullYear() - 2018) * 3 + Math.floor((currentDate.getMonth() - 1) / 4) - 2;
+
     function changeTab(event) {
         if (event.detail !== currentSubject) {
             currentSubject = event.detail;
@@ -60,6 +64,9 @@
 <section class="education">
     <h2>Education</h2>
     <p>All relevant courses I've taken, listed in reverse chronological order and optionally filtered by subject.<br/></p>
+    <p>Term definitions follow those of the University of Waterloo: Fall = September to December, Winter = January to April, 
+        Spring = May to August.
+    </p>
 
     <div class="classes">
         <Tab
@@ -76,7 +83,7 @@
             <h3>Computer Science</h3>
         {:else if currentSubject === "CO"}
             <h3>Combinatorics and Optimization</h3>
-        {:else if currentSubject === "MATH"}
+        {:else if currentSubject.includes("MATH")}
             <h3>Mathematics</h3>
         {:else}
             <h3>All Courses</h3>
@@ -84,11 +91,11 @@
 
         {#each education as edu}
             {#if currentSubject === "all"}
-                <CourseDescription education={edu}/>
+                <CourseDescription education={edu} currentTermNum={currentTermNum}/>
             {:else if edu.subject === currentSubject}
-                <CourseDescription education={edu}/>
+                <CourseDescription education={edu} currentTermNum={currentTermNum}/>
             {:else if currentSubject.includes(edu.subject)}
-                <CourseDescription education={edu}/>
+                <CourseDescription education={edu} currentTermNum={currentTermNum}/>
             {/if}
         {/each}
         </Tab>
@@ -96,6 +103,6 @@
 
     <p>
         Note: this list contains only relevant courses; I have not listed general non-CS courses (Calculus, Linear Algebra) 
-        nor many electives I've taken (Physics, English, Music, Spanish).
+        nor many electives I've taken (Physics, English, Music, Spanish, Psychology).
     </p>
 </section>

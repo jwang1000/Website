@@ -153,6 +153,7 @@
 
         .skillExplanation {
             text-align: center;
+            padding: 1rem;
         }
 
         .skills {

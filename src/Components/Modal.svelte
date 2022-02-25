@@ -79,6 +79,12 @@
             left: calc(50% - 20rem);
         }
     }
+
+    @media screen and (max-width: 768px) {
+        .content {
+            padding: 0;
+        }
+    }
 </style>
 
 <div transition:fade class="modal-backdrop" on:click={closeModal}></div>

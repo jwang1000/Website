@@ -115,7 +115,7 @@ const projects = readable([
         id: 5
     },
     {
-        name: "Minesweeper Clone",
+        name: "Minesweeper",
         primaryImage: "Icons/minesweeper.png",
         images: ["Icons/minesweeper1.PNG", "Icons/minesweeper2.PNG"],
         description: [
@@ -128,13 +128,13 @@ const projects = readable([
         id: 6
     },
     {
-        name: "Star Fox 2D",
+        name: "Star Fox 2D (original)",
         primaryImage: "Icons/starfoxtitle.png",
         images: ["Icons/starfox1.PNG", "Icons/starfox2.PNG"],
         description: [
             "<b>Language: Python 2<br>Technologies: CodeSkulptor SimpleGUI</b>",
-            "A 2D version of the Star Fox space shooter game, including unique enemy and boss AI as well as \
-            multiple levels."
+            "A 2D space shooter inspired by Star Fox. Includes unique enemy and boss AI as well as multiple levels. \
+            This project is the original version, I am in the process of rewriting it using C# and Monogame."
         ],
         link: "https://github.com/jwang1000/Star-Fox-2D",
         buttonText: "See GitHub repository...",

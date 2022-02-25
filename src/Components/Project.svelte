@@ -1,11 +1,18 @@
 <script>
-    import { fade } from 'svelte/transition';
+    import { createEventDispatcher } from 'svelte';
     import Hyperlink from './Hyperlink.svelte';
+    import Modal from '../Components/Modal.svelte';
 
     export let title;
     export let images;  // array of strings that are links
     export let link = "";
     export let buttonText = "";
+    
+    const dispatch = createEventDispatcher();
+
+    function closeProject() {
+        dispatch('close');
+    }
 </script>
 
 <style>
@@ -25,6 +32,7 @@
 
     #link {
         padding: 1rem;
+        padding-bottom: 0;
     }
 
     @media screen and (max-width: 1366px) {
@@ -38,21 +46,30 @@
         #highlight {
             max-width: 80vw;
         }
+
+        #link {
+            padding: 1rem 0;
+            padding-bottom: 0;
+        }
     }
 </style>
 
-<div id="project">
-    <h3 in:fade>{title}</h3>
+<Modal
+    title={title}
+    cancelText="Close"
+    on:cancel={closeProject}>
 
-    {#each images as image}
-        <img in:fade id="highlight" src={image} alt=""/>
-    {/each}
-
-    <slot />
-
-    {#if link}
-        <div id="link" in:fade>
-            <Hyperlink {link} text={buttonText} />
-        </div>
-    {/if}
-</div>
+    <div id="project">
+        {#each images as image}
+            <img id="highlight" src={image} alt="" />
+        {/each}
+    
+        <slot />
+    
+        {#if link}
+            <div id="link">
+                <Hyperlink {link} text={buttonText} />
+            </div>
+        {/if}
+    </div>
+</Modal>

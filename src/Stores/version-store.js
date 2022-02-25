@@ -24,6 +24,7 @@ const versions = readable([
         changes: [
             "Modified some skill descriptions",
             "Changed Microsoft XNA skill to Monogame to accurately reflect the modern framework being used",
+            "Changed Projects page to display icons of all projects with details in a modal, instead of a slideshow",
             "Updated email on Contact page",
             "Updated code for Education page to automatically calculate the current term",
             "Tweaked descriptions on Education page",

@@ -5,6 +5,9 @@
     export let caption;  // should match name of the skill/object
     export let src;
     export let active = false;
+    export let width = "75px";
+    export let height = "75px";
+    export let maxWidth = "none";
 
     const dispatch = createEventDispatcher();
 </script>
@@ -34,8 +37,9 @@
     }
 
     img {
-        width: 75px;
-        height: 75px;
+        width: var(--width);
+        height: var(--height);
+        max-width: var(--maxWidth);
         border: 0;
         vertical-align: middle;
     }
@@ -48,7 +52,7 @@
 
 <div in:fade id="buttonIcon">
     <button class:active={active} on:click={() => dispatch('click', caption)}>
-        <img {src} alt="">
+        <img {src} alt="" style="--width:{width};--height:{height};--max-width:{maxWidth};">
     </button>
     <p>{caption}</p>
 </div>

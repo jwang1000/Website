@@ -27,7 +27,7 @@
     }
 
     .change {
-        color: #fdfd96;
+        color: gray;
     }
 
     .remove {

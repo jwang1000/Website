@@ -20,31 +20,20 @@ import { readable } from 'svelte/store';
 const skills = readable([
     // LANGUAGES
     {
-        name: "Python",
-        tab: "lang",
-        icon: "Icons/python.png",
-        level: 3,
-        description: [
-            "I am currently using <b>Python 3</b> to work on <b>Pytimize</b>, a solver for optimization problems, including linear, \
-            integer, and non-linear programming problems.",
-            "Using <b>Python 2</b> in the Codeskulptor online IDE, I built a 2D space shooter game based on the video game Star Fox."
-        ],
-        id: 0
-    },
-    {
         name: "Java",
         tab: "lang",
         icon: "Icons/java.png",
         level: 3,
         description: [
             "At MDA, I used Java to work on the backend of the main web app. I fixed various bugs and refactored parts of the codebase \
-            to remove redundancy. I worked with the Lombok library and wrote and maintained <b>unit tests</b> using Mockito.",
+            to remove redundancy. I worked with the Lombok library and wrote and maintained <b>unit tests</b> using Mockito. I am also \
+            currently using Java at Yugabyte for backend development.",
             "In CS 349: User Interfaces, I used Java for multiple course projects using either <b>JavaFX</b> or the <b>Android</b> \
             API. In every project, I used <b>object-oriented design principles</b> to ensure the codebases were easily extendable.",
             "I also created a fully-functioning clone of Minesweeper, including custom difficulty and board sizes, and high scores. \
             I used the <b>Java Swing</b> library to implement the graphics."
         ],
-        id: 1
+        id: 0
     },
     {
         name: "C++",
@@ -58,7 +47,7 @@ const skills = readable([
             This project used most concepts covered in the course, such as <b>smart pointers</b>, the <b>Model-View Controller</b>, \
             and <b>polymorphism</b>." 
         ],
-        id: 3
+        id: 1
     },
     {
         name: "C#",
@@ -68,7 +57,7 @@ const skills = readable([
         description: [
             "At Thomson Reuters, I used C# to work on both the backend and frontend of one of the major web apps. I fixed bugs in \
             the frontend with <b>ASP.NET MVC</b>, as well as issues in the logic of various classes.",
-            "I am also learning to develop games in <b>Unity</b> and Microsoft's XNA Framework."
+            "I am also learning to develop games in <b>Unity</b> and the <b>Monogame</b> framework."
         ],
         id: 2
     },
@@ -81,7 +70,7 @@ const skills = readable([
             "I learned C through CS 136: Elementary Algorithm Design and Data Abstraction at the University of Waterloo. \
             Several topics were covered, including data structures, memory management, and runtime." 
         ],
-        id: 4
+        id: 3
     },
     {
         name: "JavaScript",
@@ -95,7 +84,7 @@ const skills = readable([
             a single-page web administration application.",
             "I also used JS and Svelte to build the current version of jwang1000.com."
         ],
-        id: 5
+        id: 4
     },
     {
         name: "TypeScript",
@@ -106,9 +95,31 @@ const skills = readable([
             "I used TypeScript with <b>Angular</b> to develop the frontend of web applications at MDA and Thomson Reuters. \
             I have created reusable components, improved efficiency through refactoring redundant code, and wrote services to allow \
             for data to be passed between the backend and differing parts of the frontend.",
-            "At MDA, I wrote and maintained <b>unit tests</b> using Mocha."
+            "Furthermore at MDA, I wrote and maintained <b>unit tests</b> using Mocha."
+        ],
+        id: 5
+    },
+    {
+        name: "Python",
+        tab: "lang",
+        icon: "Icons/python.png",
+        level: 3,
+        description: [
+            "I am currently using <b>Python 3</b> to work on <b>Pytimize</b>, a solver for optimization problems, including linear, \
+            integer, and non-linear programming problems.",
+            "Using <b>Python 2</b> in the Codeskulptor online IDE, I built a 2D space shooter game based on the video game Star Fox."
         ],
         id: 6
+    },
+    {
+        name: "Go",
+        tab: "lang",
+        icon: "Icons/go.png",
+        level: 2,
+        description: [
+            "I am currently learning Go while working at Yugabyte to create a custom <b>Terraform</b> provider." 
+        ],
+        id: 7
     },
     {
         name: "HTML",
@@ -116,10 +127,10 @@ const skills = readable([
         icon: "Icons/html5.png",
         level: 3,
         description: [
-            "I used HTML in my internships with Terradatum, MDA, and Thomson Reuters, as well as my personal website. I used \
-            online resources such as W3Schools to teach myself, and wrote the original version of jwang1000.com as practice." 
+            "I used HTML in my internships with Terradatum, MDA, Thomson Reuters, and Yugabyte, as well as my personal website. I \
+            used online resources such as W3Schools to teach myself, and wrote the original version of jwang1000.com as practice." 
         ],
-        id: 7
+        id: 8
     },
     {
         name: "CSS",
@@ -127,13 +138,13 @@ const skills = readable([
         icon: "Icons/css3.png",
         level: 3,
         description: [
-            "I used CSS to build my website and at my internships at Terradatum, MDA, and Thomson Reuters. Through my experience, \
-            I fixed many scenarios with compatibility issues between browsers and resolutions, and successfully delivered a wide \
-            variety of layouts requested by clients and designers.",
+            "I used CSS to build my website and at my internships at Terradatum, MDA, Thomson Reuters, and Yugabyte. Through my \
+            experience, I fixed many scenarios with compatibility issues between browsers and resolutions, and successfully delivered \
+            a wide variety of layouts requested by clients and designers.",
             "Similarly to HTML, I used online resources to learn the required knowledge. I did not use any external CSS \
             libraries to write this site." 
         ],
-        id: 8
+        id: 9
     },
     {
         name: "SQL",
@@ -143,7 +154,7 @@ const skills = readable([
         description: [
             "At Thomson Reuters, I used SQL in <b>Microsoft SQL Server</b> to debug and test the behaviour of backend logic."
         ],
-        id: 9
+        id: 10
     },
 
     // TECHNOLOGIES
@@ -168,11 +179,21 @@ const skills = readable([
         level: 3,
         description: [
             "I first learned Svelte, a JavaScript compiler, as part of my second internship at Terradatum. Using Svelte, \
-            I built <b>TD-Admin</b> from scratch, which is a single-page web administrative application for Terradatum.",
+            I built TD-Admin from scratch, which is a single-page web administrative application for Terradatum.",
             "I then used Svelte to create the current version of jwang1000.com (the website you're on!), which is much \
             more easily maintained than the previous codebase, made of the standard HTML, CSS, and JavaScript." 
         ],
         id: 21
+    },
+    {
+        name: "React",
+        tab: "tech",
+        icon: "Icons/react.png",
+        level: 1,
+        description: [
+            "I am currently learning and using React at Yugabyte for frontend development." 
+        ],
+        id: 22
     },
     {
         name: "ASP.NET MVC",
@@ -183,7 +204,7 @@ const skills = readable([
             "At Thomson Reuters, I fixed bugs in the frontend of one of the major web apps written using C# and ASP.NET MVC. \
             I also created a service to pass data between the ASP.NET MVC and Angular sections of the frontend and the backend." 
         ],
-        id: 22
+        id: 23
     },
     {
         name: "Docker",
@@ -191,11 +212,12 @@ const skills = readable([
         icon: "Icons/docker.png",
         level: 2,
         description: [
+            "I am currently using Docker at Yugabyte as part of the application development process.",
             "I used Docker to containerize several pre-existing applications for my first internship at Terradatum, \
             and coordinated multiple containers using <b>Docker Compose</b>. I used Docker again in my second term at \
-            Terradatum to containerize TD-Admin for deployment." 
+            Terradatum to containerize TD-Admin for deployment."
         ],
-        id: 23
+        id: 24
     },
     {
         name: "NumPy",
@@ -205,7 +227,28 @@ const skills = readable([
         description: [
             "I am currently using NumPy in Python 3 to work on <b>Pytimize</b>, a solver for various optimization problems." 
         ],
-        id: 24
+        id: 25
+    },
+    {
+        name: "Terraform",
+        tab: "tech",
+        icon: "Icons/terraform.png",
+        level: 2,
+        description: [
+            "At Yugabyte, I am writing a custom Terraform provider using <b>Go</b> to allow for more flexibility in creating \
+            instances of clusters."
+        ],
+        id: 26
+    },
+    {
+        name: "Monogame",
+        tab: "tech",
+        icon: "Icons/monogame.png",
+        level: 2,
+        description: [
+            "I am working on in-progress games in C# that use the Monogame framework."
+        ],
+        id: 27
     },
     {
         name: "MatPlotLib",
@@ -216,7 +259,7 @@ const skills = readable([
             "I used MatPlotLib in Python 3 to create a part of <b>Pytimize</b>; I wrote a method to graph feasible regions \
             of linear programs." 
         ],
-        id: 25
+        id: 28
     },
     {
         name: "Postman",
@@ -227,17 +270,7 @@ const skills = readable([
             "I used Postman to create collections to automate testing of APIs and bash scripts for my first internship \
             at Terradatum. I also exported these collections for use in <b>Newman</b>, the command-line based version of Postman." 
         ],
-        id: 26
-    },
-    {
-        name: "Microsoft XNA",
-        tab: "tech",
-        icon: "Icons/xna.png",
-        level: 2,
-        description: [
-            "I am working on in-progress games in C# that use the Microsoft XNA Framework." 
-        ],
-        id: 27
+        id: 29
     },
 
     // SOFTWARE
@@ -247,8 +280,8 @@ const skills = readable([
         icon: "Icons/vs code.png",
         level: 3,
         description: [
-            "I use Visual Studio Code for general software development, including my internships at Terradatum, MDA, and \
-            Thomson Reuters. I also use VS Code for all of my Python and web app development."
+            "I use Visual Studio Code for general software development, including my internships at Terradatum, MDA, \
+            Thomson Reuters, and Yugabyte. I also use VS Code for all of my Python and web app development."
         ],
         id: 40
     },
@@ -380,7 +413,7 @@ const skills = readable([
         icon: "Icons/piano.png",
         level: 4,
         description: [
-            "I have studied piano and music for over 14 years, and I have an <b>ARCT</b> (Associate of the Royal \
+            "I have studied piano and music for over 16 years, and I have an <b>ARCT</b> (Associate of the Royal \
             Conservatory of Music) diploma with First Class Honours.",
             "I also taught piano for more than three years, including technique, ear training, and repertoire." 
         ],

@@ -5,6 +5,8 @@ import { readable } from 'svelte/store';
  * 
  * name: string
  * 
+ * location: string
+ * 
  * icon: string (link to image location)
  * 
  * description: array[string] (each string = 1 paragraph)
@@ -13,23 +15,26 @@ import { readable } from 'svelte/store';
 const experience = readable([
     {
         name: "Akuna Capital",
+        location: "Chicago, IL",
         icon: "Icons/akuna capital.png",
         description: [
             "I have accepted an offer for an internship at Akuna Capital for the summer of 2022! I will be using \
-            C++ on the Development team in Chicago."
+            <b>C++</b> while working on the Development team in Chicago."
         ]
     },
     {
         name: "Yugabyte",
+        location: "Sunnyvale, CA",
         icon: "Icons/yugabyte.png",
         description: [
-            "I am currently working as a software developer intern on the Cloud Infra and Full Stack team at \
-            Yugabyte. I am working as a full stack developer using <b>React</b> and <b>Java</b>, and am learning \
+            "I am currently a software developer intern on the Cloud Infra and Full Stack team at Yugabyte.\
+            I am working as a full stack developer using <b>React</b> and <b>Java</b>, and am learning \
             <b>Go</b> to create a custom <b>Terraform</b> provider for Yugabyte Cloud."
         ]
     },
     {
         name: "Thomson Reuters",
+        location: "Toronto, ON",
         icon: "Icons/thomson reuters.png",
         description: [
             "As a software developer intern at Thomson Reuters, I worked as a full stack developer by fixing \
@@ -45,6 +50,7 @@ const experience = readable([
     },
     {
         name: "MDA",
+        location: "Halifax, NS",
         icon: "Icons/MDA.png",
         description: [
             "As an intern at MDA, I worked as a full stack developer by fixing bugs and adding features to \
@@ -58,6 +64,7 @@ const experience = readable([
     },
     {
         name: "Terradatum",
+        location: "Santa Rosa, CA",
         icon: "Icons/terradatum.png",
         description: [
             "At my first term as an intern at Terradatum, I used <b>Docker</b> and Docker Compose \
@@ -70,6 +77,7 @@ const experience = readable([
     },
     {
         name: "Inova Computer Association",
+        location: "Vancouver, BC",
         icon: "Icons/inova.png",
         description: [
             "ICA is a provincially registered nonprofit organization in British Columbia that \
@@ -79,6 +87,7 @@ const experience = readable([
     },
     {
         name: "Programming Teaching Assistant",
+        location: "Vancouver, BC",
         icon: "Icons/python.png",
         description: [
             "I helped teach high school programming courses in Python and Java to fellow students. \

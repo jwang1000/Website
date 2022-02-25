@@ -95,7 +95,7 @@ const skills = readable([
             "I used TypeScript with <b>Angular</b> to develop the frontend of web applications at MDA and Thomson Reuters. \
             I have created reusable components, improved efficiency through refactoring redundant code, and wrote services to allow \
             for data to be passed between the backend and differing parts of the frontend.",
-            "At MDA, I wrote and maintained <b>unit tests</b> using Mocha."
+            "Furthermore at MDA, I wrote and maintained <b>unit tests</b> using Mocha."
         ],
         id: 5
     },

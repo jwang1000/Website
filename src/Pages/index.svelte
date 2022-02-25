@@ -19,13 +19,16 @@
     let showSkillExplanation = false;
     let skills;
     let experience;
+    let allExperience;
+    let displayedExp = 0;
 
     const skillUnsubscribe = skillstore.subscribe(array => {
         skills = array;
     })
     skillUnsubscribe();  // store is readable, won't change
     const expUnsubscribe = expstore.subscribe(array => {
-        experience = array;
+        allExperience = array;
+        loadMoreExperience();
     })
     expUnsubscribe();
 
@@ -43,6 +46,13 @@
     function changeDescription(event) {
         if (event.detail !== currentSkill) {
             currentSkill = event.detail;
+        }
+    }
+
+    function loadMoreExperience() {
+        if (displayedExp < allExperience.length) {
+            displayedExp += 3;
+            experience = allExperience.slice(0, displayedExp);
         }
     }
 </script>
@@ -122,6 +132,10 @@
         padding: 2rem 0rem;
         text-align: center;
         background: #d2ddff;
+    }
+
+    .projEduLinks {
+        padding-top: 0.5rem;
     }
 
     @media screen and (max-width: 768px) {
@@ -249,7 +263,7 @@
                 <img src="Icons/star.png" alt=""/>
                 <img src="Icons/star.png" alt=""/>
             </div>
-            <p>Prior experience in many niche problems and concepts, which can be solved or explained with minimal searching.
+            <p>Prior experience in many niche problems and concepts, which can be solved or explained with ease.
                 Recognized as an expert or authority in this skill.</p>
         </div>
     </Modal>
@@ -293,8 +307,13 @@
 <section class="experience" id="experience">
     <h2>Work Experience</h2>
     {#each experience as exp}
-        <Experience name={exp.name} description={exp.description} src={exp.icon}/>
+        <Experience name={exp.name} location={exp.location} description={exp.description} src={exp.icon}/>
     {/each}
-    <Button text="See Projects..." on:click={() => dispatch('changepage', "projects")}/>
-    <Button text="See Education..." on:click={() => dispatch('changepage', "education")}/>
+    {#if displayedExp < allExperience.length}
+        <Button text="See More Experience..." on:click={() => loadMoreExperience()}/>
+    {/if}
+    <div class="projEduLinks">
+        <Button text="See Projects..." on:click={() => dispatch('changepage', "projects")}/>
+        <Button text="See Education..." on:click={() => dispatch('changepage', "education")}/>
+    </div>
 </section>

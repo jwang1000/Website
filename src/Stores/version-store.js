@@ -18,7 +18,8 @@ const versions = readable([
             "Added descriptions of ongoing/future work terms at Yugabyte and Akuna Capital to work experience and skills",
             "Added descriptions of new skills",
             "Added barrier to Contact page to filter out excessive emails",
-            "Added definitions of UWaterloo terms to Education page"
+            "Added definitions of UWaterloo terms to Education page",
+            "Added location tags to work experience"
         ],
         changes: [
             "Modified some skill descriptions",
@@ -26,7 +27,9 @@ const versions = readable([
             "Updated email on Contact page",
             "Updated code for Education page to automatically calculate the current term",
             "Tweaked descriptions on Education page",
-            "Updated noscript to be more descriptive",
+            "Updated no JS warning to be more descriptive",
+            "Changed experience to only display 3 newest jobs initially and load more on demand",
+            "Updated footer copyright with 2022",
             "Fixed bug with title for Math courses on Education page"
         ],
         removals: [

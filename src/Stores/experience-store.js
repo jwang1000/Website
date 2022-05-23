@@ -27,8 +27,8 @@ const experience = readable([
         location: "Sunnyvale, CA",
         icon: "Icons/yugabyte.png",
         description: [
-            "I am currently a software developer intern on the Cloud Infra and Full Stack team at Yugabyte.\
-            I am working as a full stack developer using <b>React</b> and <b>Java</b>, and am learning \
+            "I worked as a software developer intern on the Cloud Infra and Full Stack team at Yugabyte.\
+            I used <b>React</b> and <b>Java</b> to fix issues in and improve the frontend and backend, and learned \
             <b>Go</b> to create a custom <b>Terraform</b> provider for Yugabyte Cloud."
         ]
     },

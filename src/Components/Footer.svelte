@@ -13,7 +13,8 @@
         color: white;
     }
 
-    p {
+    p, a {
+        color: white;
         font-size: 14px;
     }
 
@@ -31,6 +32,7 @@
 
     .link {
         cursor: pointer;
+        text-decoration: none;
     }
 
     .link:hover {
@@ -52,7 +54,7 @@
     <p class="copyright">Written by and &#169 Jonathan Wang 2019 - 2022.</p>
 
     <div class="version">
-        <p class="link" on:click={() => dispatch('changepage', "versionHistory")}>Version 2.5.</p>
+        <a class="link" href="/version">Version 2.6.</a>
         <p class="builtWith">Built with Svelte.</p>
     </div>
 </footer>

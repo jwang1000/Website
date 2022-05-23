@@ -135,7 +135,7 @@
     }
 
     .projEduLinks {
-        padding-top: 0.5rem;
+        padding-top: 1.5rem;
     }
 
     @media screen and (max-width: 768px) {
@@ -314,7 +314,7 @@
         <Button text="See More Experience..." on:click={() => loadMoreExperience()}/>
     {/if}
     <div class="projEduLinks">
-        <Button text="See Projects..." on:click={() => dispatch('changepage', "projects")}/>
-        <Button text="See Education..." on:click={() => dispatch('changepage', "education")}/>
+        <Button text="See Projects..." hyperlink={true} destination="/projects"/>
+        <Button text="See Education..." hyperlink={true} destination="/education"/>
     </div>
 </section>

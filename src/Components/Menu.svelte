@@ -41,7 +41,7 @@
         font-family: Verdana, Trebuchet, Helvetica, Arial, sans-serif;
     }
 
-    button {
+    button, a {
         display: block;
         color: white;
         font-size: 16px;
@@ -57,11 +57,11 @@
 
     #page {
         text-align: center;
-        width: 100%;
+        width: 75%;
         padding: 1rem 1.5rem;
     }
 
-    button:hover {
+    button:hover, a:hover {
         background-color: #bccbff;
         color: black;
     }
@@ -95,24 +95,24 @@
     </button>
 
     <h3>Menu</h3>
-    <button id="page"
+    <a id="page"
         class:active={activePage === "index"} 
-        on:click={() => dispatch('changepage', "index")}>
+        href="/">
         Home
-    </button>
-    <button id="page"
+    </a>
+    <a id="page"
         class:active={activePage === "projects"} 
-        on:click={() => dispatch('changepage', "projects")}>
+        href="/projects">
         Projects
-    </button>
-    <button id="page"
+    </a>
+    <a id="page"
         class:active={activePage === "education"} 
-        on:click={() => dispatch('changepage', "education")}>
+        href="/education">
         Education
-    </button>
-    <button id="page"
+    </a>
+    <a id="page"
         class:active={activePage === "contact"} 
-        on:click={() => dispatch('changepage', "contact")}>
+        href="/contact">
         Contact
-    </button>
+    </a>
 </div>

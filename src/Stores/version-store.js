@@ -13,6 +13,17 @@ import { readable } from "svelte/store";
  */
 const versions = readable([
     {
+        name: "2.6",
+        additions: [
+            "Added client-side routing"
+        ],
+        changes: [
+            "Finalized description of work term at Yugabyte",
+            "Modified some skill descriptions"
+        ],
+        removals: []
+    },
+    {
         name: "2.5",
         additions: [
             "Added descriptions of ongoing/future work terms at Yugabyte and Akuna Capital to work experience and skills",

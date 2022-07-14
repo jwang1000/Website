@@ -20,7 +20,7 @@
         width: 100%;
     }
 
-    header button {
+    header a, header button {
         float: right;
         display: block;
         color: white;
@@ -36,7 +36,7 @@
         text-decoration: none;
     }
 
-    #desktop button {
+    #desktop a {
         padding: 1rem 1.5rem;
     }
 
@@ -45,12 +45,12 @@
     }
 
     img {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2.7rem;
+        height: 2.7rem;
         padding: 0.2rem;
     }
 
-    header button:hover {
+    header a:hover, header button:hover {
         background-color: #bccbff;
         color: black;
     }
@@ -87,31 +87,31 @@
 
 <header>
     <div id="home">
-        <button on:click={() => dispatch('changepage', "index")}>
+        <a href="/">
             <img src="Icons/logo.png" alt="">
-        </button>
+        </a>
     </div>
     <div id="desktop">
-        <button 
+        <a 
             class:active={activePage === "contact"} 
-            on:click={() => dispatch('changepage', "contact")}>
+            href="/contact">
             Contact
-        </button>
-        <button 
+        </a>
+        <a 
             class:active={activePage === "education"} 
-            on:click={() => dispatch('changepage', "education")}>
+            href="/education">
             Education
-        </button>
-        <button 
+        </a>
+        <a 
             class:active={activePage === "projects"} 
-            on:click={() => dispatch('changepage', "projects")}>
+            href="/projects">
             Projects
-        </button>
-        <button 
+        </a>
+        <a 
             class:active={activePage === "index"} 
-            on:click={() => dispatch('changepage', "index")}>
+            href="/">
             Home
-        </button>
+        </a>
     </div>
     <div id="mobile">
         <!--Hamburger menu icon-->
@@ -121,7 +121,7 @@
             <div id="menuIcon"></div>
         </button>
         {#if showMobileMenu}
-            <Menu {activePage} on:changepage on:close={() => showMobileMenu = false}/>
+            <Menu {activePage} on:close={() => showMobileMenu = false}/>
         {/if}
     </div>
 </header>

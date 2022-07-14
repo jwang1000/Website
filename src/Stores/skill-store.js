@@ -26,8 +26,8 @@ const skills = readable([
         level: 3,
         description: [
             "At MDA, I used Java to work on the backend of the main web app. I fixed various bugs and refactored parts of the codebase \
-            to remove redundancy. I worked with the Lombok library and wrote and maintained <b>unit tests</b> using Mockito. I am also \
-            currently using Java at Yugabyte for backend development.",
+            to remove redundancy. I worked with the Lombok library and wrote and maintained <b>unit tests</b> using Mockito. I also \
+            used Java at Yugabyte for backend development, fixing multiple issues.",
             "In CS 349: User Interfaces, I used Java for multiple course projects using either <b>JavaFX</b> or the <b>Android</b> \
             API. In every project, I used <b>object-oriented design principles</b> to ensure the codebases were easily extendable.",
             "I also created a fully-functioning clone of Minesweeper, including custom difficulty and board sizes, and high scores. \
@@ -117,7 +117,8 @@ const skills = readable([
         icon: "Icons/go.png",
         level: 2,
         description: [
-            "I am currently learning Go while working at Yugabyte to create a custom <b>Terraform</b> provider." 
+            "I learned to use Go while working at Yugabyte; I created a custom <b>Terraform</b> provider with full CRUD functionality \
+            for clusters in the cloud." 
         ],
         id: 7
     },
@@ -191,7 +192,8 @@ const skills = readable([
         icon: "Icons/react.png",
         level: 1,
         description: [
-            "I am currently learning and using React at Yugabyte for frontend development." 
+            "I learned to use React at Yugabyte for frontend development, fixing issues and adding new features to the \
+            website for Yugabyte Cloud." 
         ],
         id: 22
     },
@@ -235,8 +237,8 @@ const skills = readable([
         icon: "Icons/terraform.png",
         level: 2,
         description: [
-            "At Yugabyte, I am writing a custom Terraform provider using <b>Go</b> to allow for more flexibility in creating \
-            instances of clusters."
+            "At Yugabyte, I wrote a custom Terraform provider using <b>Go</b> to allow for more flexibility in creating \
+            instances of clusters. I learned to use both the older SDKv2 and the new Terraform Plugin Framework."
         ],
         id: 26
     },

@@ -16,10 +16,11 @@
     "build": "rollup -c",
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
-    "start": "sirv public",
+    "start": "sirv public --single",
     "start:dev": "sirv public --dev"
   },
   "dependencies": {
+    "page": "^1.11.6",
     "serialize-javascript": "^5.0.1"
   }
 }

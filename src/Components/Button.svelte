@@ -1,10 +1,12 @@
 <script>
     export let text = "";
     export let disabled = false;
+    export let hyperlink = false;
+    export let destination = "";
 </script>
 
 <style>
-    button {
+    button, a {
         padding: 12px;
         font-size: 16px;
         font-family: Verdana, Trebuchet, Helvetica, Arial, sans-serif;
@@ -21,12 +23,18 @@
         cursor: default;
     }
 
-    button:hover {
+    button:hover, a:hover {
         background-color: #2c48a8;
         color: white;
     }
 </style>
 
-<button class:disabled="{disabled}" {disabled} on:click>
-    {text}
-</button>
+{#if hyperlink}
+    <a class:disabled="{disabled}" {disabled} href="{destination}">
+        {text}
+    </a>
+{:else}
+    <button class:disabled="{disabled}" {disabled} on:click>
+        {text}
+    </button>
+{/if}

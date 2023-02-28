@@ -13,6 +13,23 @@ import { readable } from "svelte/store";
  */
 const versions = readable([
     {
+        name: "2.7",
+        additions: [
+            "Added descriptions of 4th year courses",
+            "Added fun secret page by demand"
+        ],
+        changes: [
+            "Updated profile picture - last one was over 6 years old(!)",
+            "Finalized description of work term at Akuna Capital",
+            "Modified some skill descriptions",
+            "Modified styling of paragraphs",
+            "Updated email on contact page",
+            "Updated dependencies",
+            "Updated footer copyright with 2023"
+        ],
+        removals: []
+    },
+    {
         name: "2.6",
         additions: [
             "Added client-side routing"

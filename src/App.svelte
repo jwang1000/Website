@@ -6,6 +6,7 @@
     import Contact from './Pages/contact.svelte';
     import Education from './Pages/education.svelte';
     import VersionHistory from './Pages/versionHistory.svelte';
+    import Resume from "./Pages/resume.svelte";
     import NotFound from './Pages/notFound.svelte';
 
 	import Header from './Components/Header.svelte';
@@ -33,6 +34,9 @@
             case "version":
                 currentPage = VersionHistory;
                 break;
+            case "resume":
+                currentPage = Resume;
+                break;
             default:
                 currentPage = NotFound;
                 break;
@@ -45,6 +49,7 @@
     router('/contact', () => changePage("contact"));
     router('/education', () => changePage("education"));
     router('/version', () => changePage("version"));
+    router('/resume', () => changePage("resume"));
     router('/*', () => changePage("notFound"));
 
     router.start()

@@ -29,6 +29,10 @@
         display: flex;
     }
 
+    #imgtext #text {
+        text-align: justify;
+    }
+
     #imgtext #image {
         padding: 1rem;
     }

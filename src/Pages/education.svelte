@@ -35,13 +35,19 @@
 
 <style>
     .education {
-        padding: 2rem 4rem;
+        padding: 2rem 12rem;
         background: #d2ddff;
         text-align: center;
     }
 
     h3 {
         padding-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 1366px) {
+        .education {
+            padding: 2rem 6rem;
+        }
     }
 
     @media screen and (max-width: 500px) {

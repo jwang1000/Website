@@ -69,11 +69,17 @@
     }
 
     .aboutimg {
-        flex: 20%;
+        flex: 25%;
+    }
+
+    .aboutimg img {
+        width: 250px; 
+        height: 250px; 
+        border: 0
     }
 
     .abouttext {
-        flex: 60%;
+        flex: 50%;
         text-align: right;
     }
 

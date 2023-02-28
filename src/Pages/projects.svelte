@@ -43,6 +43,10 @@
         background: #d2ddff;
     }
 
+    .project-entry {
+        padding: 1rem;
+    }
+
     @media screen and (max-width: 1366px) {
         .projects {
             padding: 2rem 5rem;
@@ -71,27 +75,29 @@
     <p>Click an image to learn more about the project and to see the repository on GitHub!</p>
 
     {#each projects as project (project.id)}
-        <ButtonIcon 
-            caption={project.name} 
-            src={project.primaryImage} 
-            width={width}
-            height={height}
-            maxWidth={maxWidth}
-            on:click={() => activeProject = project.id}
-        />
-        {#if activeProject == project.id}
-            <Project 
-                title={project.name}
-                images={project.images}
-                link={project.link}
-                buttonText={project.buttonText}
-                on:close={() => activeProject = -1}>
+        <div class="project-entry">
+            <ButtonIcon 
+                caption={project.name} 
+                src={project.primaryImage} 
+                width={width}
+                height={height}
+                maxWidth={maxWidth}
+                on:click={() => activeProject = project.id}
+            />
+            {#if activeProject == project.id}
+                <Project 
+                    title={project.name}
+                    images={project.images}
+                    link={project.link}
+                    buttonText={project.buttonText}
+                    on:close={() => activeProject = -1}>
 
-                {#each project.description as para}
-                    <p>{@html para}</p>
-                {/each}
-            </Project>
-        {/if}
+                    {#each project.description as para}
+                        <p>{@html para}</p>
+                    {/each}
+                </Project>
+            {/if}
+        </div>
     {/each}
 </section>
 

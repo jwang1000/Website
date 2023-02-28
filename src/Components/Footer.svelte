@@ -51,10 +51,10 @@
 </style>
 
 <footer>
-    <p class="copyright">Written by and &#169 Jonathan Wang 2019 - 2022.</p>
+    <p class="copyright">Written by and &#169 Jonathan Wang 2019 - 2023.</p>
 
     <div class="version">
-        <a class="link" href="/version">Version 2.6.</a>
-        <p class="builtWith">Built with Svelte.</p>
+        <a class="link" href="/version">Version 2.7.</a>
+        <p class="builtWith">Built with Svelte and ♥</p>
     </div>
 </footer>

@@ -38,7 +38,12 @@
 
 <style>
     div {
-        padding-bottom: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .course-description {
+        text-align: justify;
     }
 </style>
 
@@ -47,7 +52,7 @@
     <p>{getTermName(term)}</p>
 
     {#each description as para}
-        <p>{@html para}</p>
+        <p class="course-description">{@html para}</p>
         <!--Though this is treated as html code, this should be safe since there is no user input.-->
     {/each}
 </div>

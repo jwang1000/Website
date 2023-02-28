@@ -14,6 +14,10 @@
         border: 0;
         display: inline-block;
     }
+
+    .description {
+        text-align: justify;
+    }
 </style>
 
 <div in:fade id="description">
@@ -43,7 +47,7 @@
     {/if}
 
     {#each description as para}
-        <p>{@html para}</p>
+        <p class="description">{@html para}</p>
         <!--Though this is treated as html code, this should be safe since there is no user input.-->
     {/each}
 </div>

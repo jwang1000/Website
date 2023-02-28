@@ -73,7 +73,7 @@
     {/if}
     
     {#if showEmail}
-        <h3>contactjwang1000<code>&#64</code>gmail.com</h3>
+        <h3>contact<code>&#64</code>jwang1000.com</h3>
         <p>I'll get back to you as soon as possible! If you've emailed me during a crunch time or midterm/finals season though, be 
             aware that it might take a few days.
         </p>

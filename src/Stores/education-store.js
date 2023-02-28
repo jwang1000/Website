@@ -219,6 +219,79 @@ const education = readable([
             form games, coalition games, Bayesian games, mechanism design, and auctions."
         ]
     },
+    {
+        name: "Numerical Computation",
+        subject: "CS",
+        courseNumber: 370,
+        term: 12,
+        description: [
+            "Teaches principles and practices of basic numerical computation as a key aspect of scientific computation, \
+            including visualization of results. Covers approximation by splines, fast Fourier transforms, solutions of \
+            linear and nonlinear equations, differential equations, floating point number systems, error, and stability. \
+            Taught with examples of specific applications to image processing, analysis of data, and scientific modeling."
+        ]
+    },
+    {
+        name: "Computer Networks",
+        subject: "CS",
+        courseNumber: 456,
+        term: 12,
+        description: [
+            "An introduction to network architectures and protocols, placing emphasis on protocols used in the Internet. \
+            Specific topics include application layer protocols, network programming, transport protocols, routing, \
+            multicast, data link layer issues, multimedia networking, network security, and network management."
+        ]
+    },
+    {
+        name: "Introduction to Artificial Intelligence",
+        subject: "CS",
+        courseNumber: 486,
+        term: 12,
+        description: [
+            "Teaches goals and methods of artificial intelligence, methods of general problem solving, knowledge \
+            representation and reasoning, planning, and reasoning about uncertainty. Includes introductions to various \
+            algorithms in machine learning."
+        ]
+    },
+    {
+        name: "Application Development",
+        subject: "CS",
+        courseNumber: 346,
+        term: 13,
+        description: [
+            "An introduction to full-stack application design and development. Students worked in project teams to design \
+            and build complete, working applications and services using standard tools. Topics include best-practices \
+            in design, development, testing, and deployment."
+        ]
+    },
+    {
+        name: "Computer Security and Privacy",
+        subject: "CS",
+        courseNumber: 458,
+        term: 13,
+        description: [
+            "Covered security and privacy issues in various aspects of computing. Specific topics include comparing \
+            security and privacy, program security, writing secure programs, controls against program threats, operating \
+            system security, formal security models, network security, Internet application security and privacy, \
+            privacy-enhancing technologies, database security and privacy, inference, data mining, security policies, \
+            physical security, economics of security, and legal and ethical issues."
+        ]
+    },
+    {
+        name: "Introduction to Machine Learning",
+        subject: "CS",
+        courseNumber: 480,
+        term: 13,
+        description: [
+            "An introduction to modeling and algorithmic techniques for machines to learn concepts from data. \
+            Covered a wide variety of topics, including underfitting, overfitting, cross-validation, classification, \
+            regression, clustering, loss minimization. regularization, maximum likelihood, and Bayesian learning. Also \
+            introduced various algorithms, including nearest neighbour, (generalized) linear regression, mixtures of \
+            Gaussians, Gaussian processes, kernel methods, support vector machines, deep learning, sequence learning, \
+            and ensemble techniques. Various other topics included distributed learning, stream learning, natural language \
+            processing, computer vision, data mining, human computer interaction, and information retrieval."
+        ]
+    },
 ]);
 
 export default education;

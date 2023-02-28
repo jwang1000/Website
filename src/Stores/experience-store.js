@@ -18,8 +18,11 @@ const experience = readable([
         location: "Chicago, IL",
         icon: "Icons/akuna capital.png",
         description: [
-            "I have accepted an offer for an internship at Akuna Capital for the summer of 2022! I will be using \
-            <b>C++</b> while working on the Development team in Chicago."
+            "As a C++ developer intern, I worked on custom data structures in shared <b>C++</b> libraries and improved \
+            common features used throughout the company. \
+            I implemented features for new exchanges in trading simulator software used by Akuna, and added \
+            support for more types of orders in the <b>low latency multithreaded</b> message processing layer.",
+            "I also helped implement features on new trading engine testing software using <b>Python</b>."
         ]
     },
     {

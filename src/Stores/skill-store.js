@@ -20,6 +20,22 @@ import { readable } from 'svelte/store';
 const skills = readable([
     // LANGUAGES
     {
+        name: "C++",
+        tab: "lang",
+        icon: "Icons/c++.png",
+        level: 3,
+        description: [
+            "At Akuna Capital, I used C++ to improve the <b>low latency multithreaded</b> trading engine, including the message \
+            processing layer and trading simulator. I also extended custom data structures used throughout the company.",
+            "I learned C++14 through CS 246: Object-Oriented Software Development at the University of Waterloo. \
+            Topics including <b>object-oriented design principles</b>, <b>RAII</b>, and several <b>design patterns</b> were covered.",
+            "As a final project, I worked in a group to write Biquadris, a two-player command line version of Tetris. \
+            This project used most concepts covered in the course, such as <b>smart pointers</b>, the <b>Model-View Controller</b>, \
+            and <b>polymorphism</b>." 
+        ],
+        id: 0
+    },
+    {
         name: "Java",
         tab: "lang",
         icon: "Icons/java.png",
@@ -32,20 +48,6 @@ const skills = readable([
             API. In every project, I used <b>object-oriented design principles</b> to ensure the codebases were easily extendable.",
             "I also created a fully-functioning clone of Minesweeper, including custom difficulty and board sizes, and high scores. \
             I used the <b>Java Swing</b> library to implement the graphics."
-        ],
-        id: 0
-    },
-    {
-        name: "C++",
-        tab: "lang",
-        icon: "Icons/c++.png",
-        level: 3,
-        description: [
-            "I learned C++14 through CS 246: Object-Oriented Software Development at the University of Waterloo. \
-            Topics including <b>object-oriented design principles</b>, <b>RAII</b>, and several <b>design patterns</b> were covered.",
-            "As a final project, I worked in a group to write Biquadris, a two-player command line version of Tetris. \
-            This project used most concepts covered in the course, such as <b>smart pointers</b>, the <b>Model-View Controller</b>, \
-            and <b>polymorphism</b>." 
         ],
         id: 1
     },
